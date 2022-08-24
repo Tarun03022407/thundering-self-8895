@@ -1,12 +1,717 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-</head>
-<body>
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>
+      Online Supermarket & Premium Grocery Shopping Store In India
+      --:NatureBasket.co.in
+    </title>
+    <style>
+      * {
+        background-color: #fff;
+        /* justify-content: space-between; */
+
+        margin-left: 0%;
+        margin-right: 0%;
+      }
+
+      div > img {
+        width: 330px;
+        height: 110px;
+        cursor: pointer;
+      }
+      #top {
+        display: flex;
+        border: px solid red;
+      }
+      .headstar {
+        background: url(https://www.naturesbasket.co.in/Images/header-icons.jpg);
+      }
+      #menu {
+        display: flex;
+        margin: auto;
+        width: 70%;
+        height: 100%;
+        margin-left: 70px;
+      }
+      #startshop {
+        width: 65%;
+        text-align: center;
+        border: 1px solid rgb(171, 165, 165);
+      }
+      #pin {
+        background-color: rgb(247, 240, 240);
+        width: 14%;
+        text-align: center;
+        border: 1px solid rgb(171, 165, 165);
+        border-radius: 5px 0px 0px 5px;
+      }
+      #place {
+        background-color: rgb(247, 240, 240);
+        width: 14%;
+        text-align: center;
+        cursor: pointer;
+        border: 1px solid rgb(171, 165, 165);
+      }
+      a {
+        text-decoration: none;
+        color: black;
+        float: right;
+        padding-right: 4px;
+        margin-top: 20px;
+      }
+      #uppernav {
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+        border: px solid red;
+        width: 55%;
+        margin-bottom: 0%;
+        margin-left: 32%;
+        height: 0px;
+      }
+      div > a {
+        font-size: 13px;
+        font-weight: normal;
+        margin: auto;
+        margin-right: 50px;
+        text-align: center;
+        padding: 0;
+        position: relative;
+      }
+
+      #navbar2 {
+        width: 100%;
+        margin: auto;
+        border: 1px solid rgb(239, 223, 223);
+        text-align: center;
+        height: 40px;
+        display: flex;
+        padding-left: 0;
+      }
+
+      #navbar2 > select {
+        height: 100%;
+        /* border: 1px solid blue; */
+        color: red;
+        width: 20%;
+        font-size: 18px;
+        border: none;
+      }
+      #navbar2 > a {
+        text-align: center;
+        font-size: 15px;
+      }
+      .bannertop > img {
+        height: 376px;
+        width: 100%;
+        position: relative;
+      }
+
+      marquee {
+        cursor: pointer;
+        margin: 10px;
+      }
+      #cartone {
+        width: 100%;
+        height: 205px;
+        border-radius: 10px;
+        border: px solid red;
+        box-shadow: rgba(9, 30, 66, 0.25) 0px 4px 8px -2px,
+          rgba(9, 30, 66, 0.08) 0px 0px 0px 1px;
+      }
+      #carts {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        gap: 40px;
+        margin-top: 10px;
+      }
+      #carttwo {
+        width: 95%;
+        height: 300px;
+        border-radius: 10px;
+        border: px solid red;
+        box-shadow: rgba(9, 30, 66, 0.25) 0px 4px 8px -2px,
+          rgba(9, 30, 66, 0.08) 0px 0px 0px 1px;
+        margin-left: 10px;
+      }
+      #carts2 {
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+        gap: px;
+        margin-top: 10px;
+      }
+      #heading {
+        margin-top: 0px;
+        text-align: center;
+      }
+      #containertwo{
+        display:flex;
+        height:550px;
+        width: 100%;
+        border:px solid black;
+      }
+      #inner{
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+        gap: 10px;
+        margin-top: 10px;
+       border: px solid red;
+       height: 90%;
+       justify-content: space-between;
+       width: 100%;
+       margin-left: 20px;
+     
+      }
+      p{
+        font-size:30px ;
+        text-align: center;
+        color: grey;
+      }
+      #trend{
+        width: 100%;
+        height: 300px;
+        border-radius: 10px;
+        border:px solid red;
+        box-shadow: rgba(9, 30, 66, 0.25) 0px 4px 8px -2px,
+          rgba(9, 30, 66, 0.08) 0px 0px 0px 1px;
+      }
+      #containerthree{
+        display:flex;
+        height:550px;
+        width: 100%;
+        border:px solid black;
+      }
+      #trend2{
+        width: 100%;
+        height: 300px;
+        border-radius: 10px;
+        border:px solid red;
+        box-shadow: rgba(9, 30, 66, 0.25) 0px 4px 8px -2px,
+          rgba(9, 30, 66, 0.08) 0px 0px 0px 1px;
+      }
+      #inner2{
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+        gap: 10px;
+        margin-top: 10px;
+       border: px solid red;
+       height: 90%;
+       justify-content: space-between;
+       width: 100%;
+       margin-left: 20px;
+     
+      }
+      #banner{
+        height: 355px;
+        width: 100%;
+      }
+      #inner3{
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+        gap: 10px;
+        margin-top: 10px;
+       border: px solid red;
+       height: 90%;
+       justify-content: space-between;
+       width: 100%;
+       margin-left: 20px;
+     
+      }
+      #trend3{
+        width: 100%;
+        height: 300px;
+        border-radius: 10px;
+        border:px solid red;
+        box-shadow: rgba(9, 30, 66, 0.25) 0px 4px 8px -2px,
+          rgba(9, 30, 66, 0.08) 0px 0px 0px 1px;
+      }
+      #containerfour{
+        display:flex;
+        height:550px;
+        width: 100%;
+        border:px solid black;
+      }
+      #discover{
+        display:flex;
+        border:1px solid black;
+        height:50px;
+        background-color:lightGrey; 
+        justify-content:center;
+         
+      }
+      #discover>div{
+      
+        border:px solid blue;
+        margin:auto;
+        text-align:center;
+       justify-content:center;
+       width:90%;
+        height:70%;
+        cursor:pointer
+        
+        
+        
+
+      }
     
-</body>
+   
+
+      
+     
+    </style>
+  </head>
+  <body>
+    <a href="">Login</a>
+
+    <div id="uppernav">
+      <div>
+        <a href="">Online Slots Availability</a>
+      </div>
+      <div>
+        <a href="">Fresh & Fast</a>
+      </div>
+      <div>
+        <a href="">Store Locator</a>
+      </div>
+      <div>
+        <a href="">Contact Us</a>
+      </div>
+    </div>
+
+    <div id="container">
+      <div id="top">
+        <div>
+          <img
+            src="https://www.naturesbasket.co.in/Images/logosnew.png?v=2"
+            alt=""
+          />
+        </div>
+
+        <div id="menu">
+          <input type="number" id="pin" placeholder=" 🖊️ Enter Pin" />
+
+          <select id="place">
+            <option value="">Mumbai</option>
+            <option value="">Delhi-Ncr</option>
+            <option value="">Pune</option>
+            <option value="">Bangaluru</option>
+            <option value="">Thane</option>
+            <option value="">Kolkata</option>
+            <option value="">Navi Mumbai</option>
+          </select>
+          <input
+            type="text"
+            name=""
+            id="startshop"
+            placeholder="Start Shopping ..."
+          />
+
+          <input
+            type="image"
+            name=""
+            id="search-button"
+            src="	https://www.naturesbasket.co.in/Images/search-button.jpg"
+          />
+        </div>
+      </div>
+
+      <div id="navbar2">
+        <select id="place">
+          <option value="">SHOP BY CATEGORY</option>
+        </select>
+        <a href="">MY ORDERS</a>
+        <a href="">GIFTING</a>
+        <a href="">REWARDS</a>
+        <a href="">BLOGS</a>
+        <a href="">OFFERS</a>
+        <a href="">BLOGS</a>
+        <a href="">CONNOISSEUR’S SELECTION</a>
+        <a href="">BOOK STORE VISIT</a>
+      </div>
+    </div>
+
+    <div class="bannertop">
+      <img
+        src="https://gnbdevcdn.s3-ap-southeast-1.amazonaws.com/Marketing/d8cc09f5-5d68-4853-ae9a-233ceabe3acd.jpg?v=4"
+        alt=""
+      />
+    </div>
+
+    <marquee behavior="alternate" direction="left">
+      <img
+        src="https://d1z88p83zuviay.cloudfront.net/BannerImages/e2815333-d548-4212-9acd-a96f08950440_1320x376.jpg"
+        alt=""
+      />
+      <img
+        src="https://d1z88p83zuviay.cloudfront.net/BannerImages/bd139272-384b-4d66-8932-8bc8093f5b6d_1320x376.jpg"
+        alt=""
+      />
+      <img
+        src="https://d1z88p83zuviay.cloudfront.net/BannerImages/7f923dd7-a3ea-4a04-a991-c3cedd64317a_1320x376.jpg"
+        alt=""
+      />
+      <img
+        src="https://d1z88p83zuviay.cloudfront.net/BannerImages/d076c03c-6a84-42e3-820f-96cc67b5ab62_1320x376.jpg"
+        alt=""
+      />
+      <img
+        src="https://d1z88p83zuviay.cloudfront.net/BannerImages/b7641ce5-fd86-485f-bc27-e6c486afc951_1320x376.jpg"
+        alt=""
+      />
+      <img
+        src="https://d1z88p83zuviay.cloudfront.net/BannerImages/56d58540-9be6-436e-9046-3a75e7f3928b_1320x376.jpg"
+        alt=""
+      />
+      <img
+        src="https://d1z88p83zuviay.cloudfront.net/BannerImages/9bd5bd18-3f11-4062-afe6-380ff6a35dfc_1320x376.jpg"
+        alt=""
+      />
+      <img
+        src="https://d1z88p83zuviay.cloudfront.net/BannerImages/a1bb73ba-00a7-4473-ac0a-cafd9500e6eb_1320x376.jpg"
+        alt=""
+      />
+      <img
+        src="https://d1z88p83zuviay.cloudfront.net/BannerImages/e2815333-d548-4212-9acd-a96f08950440_1320x376.jpg"
+        alt=""
+      />
+      <img
+        src="https://d1z88p83zuviay.cloudfront.net/BannerImages/3b8d8078-b906-4340-8ac2-d56085bf9a02_1320x376.jpg"
+        alt=""
+      />
+      <img
+        src="https://d1z88p83zuviay.cloudfront.net/BannerImages/28b8913f-ae0e-4afe-ac72-bae62be8ffb2_1320x376.png"
+        alt=""
+      />
+    </marquee>
+
+    <div id="carts"></div>
+    <h1 id="heading">SHOP BY CATEGORY</h1>
+    <div id="carts2"></div>
+    <p id="para">---------TRENDING OFFERS----------</p>
+
+    <div id="containertwo">
+        <div id="inner">
+
+        </div>
+    </div>
+    <p id="heading">-------CURATED FOR YOU---------</p>
+    
+    <div id="containerthree">
+        <div id="inner2"></div>
+    </div>
+
+    <div id="banner" ></div>
+    
+    <br>
+    <p id="heading">-------WHAT'S NEW---------</p>
+    
+    <div id="containerfour">
+        <div id="inner3"></div>
+    </div>
+    <p id="heading">-------DISCOVER MORE---------</p>
+    
+    <div id="discover"></div>
+    
+
+  </body>
 </html>
+
+<script>
+  let images = [
+    {
+      img_url:
+        "https://www.naturesbasket.co.in/Images/NaturesBasketGifting.jpeg?v=7",
+    },
+    {
+      img_url:
+        "https://www.naturesbasket.co.in/Images/Japanesecuisine-webbox.png?v=12",
+    },
+    {
+      img_url:
+        "https://www.naturesbasket.co.in/Images/Gluten-free-web%20box%20banner.png?v=15",
+    },
+  ];
+
+  images.map(function (elem) {
+    let box = document.createElement("div");
+
+    let imageOfCart = document.createElement("img");
+    imageOfCart.setAttribute("src", elem.img_url);
+    imageOfCart.setAttribute("id", "cartone");
+    box.append(imageOfCart);
+    document.getElementById("carts").append(box);
+  });
+
+  let images2 = [
+    {
+      img_url:"https://gnbdevcdn.s3.amazonaws.com/Images/Category/Exoticvegetablesweb.png",
+      name: "Exotic Vegetables",
+   
+
+    },
+    {
+      img_url:"https://gnbdevcdn.s3.amazonaws.com/Images/Category/coldcutweb.png",
+      name: "Meat , Poultary & Seafood",
+  
+    },
+    {
+      img_url:"https://gnbdevcdn.s3.amazonaws.com/Images/Category/Freshartisinalbreadsweb.png",
+      name: "Fresh Artisanal Breads",
+  
+    },
+    {
+      img_url:"https://gnbdevcdn.s3.amazonaws.com/Images/Category/dailyessentialsweb.png",
+      name: "Daily Essentials",
+
+    },
+  ];
+
+  images2.map(function (elem) {
+    let box = document.createElement("div");
+
+    let imageOfCart = document.createElement("img");
+    imageOfCart.setAttribute("src", elem.img_url);
+    imageOfCart.setAttribute("id", "carttwo");
+    let names = document.createElement("p");
+    names.style.marginLeft = "10px";
+    names.style.fontSize = "17px";
+    names.style.marginTop = "0px";
+    names.innerText = elem.name;
+    box.append(imageOfCart, names)
+    document.getElementById("carts2").append(box);
+  });
+
+
+
+let trendingData=[
+    {imgurl:"https://d1z88p83zuviay.cloudfront.net/ProductVariantThumbnailImages/0cd9b895-a680-4248-baf6-15b1bd70aaf9_425x425.jpg",
+    time:"DELIVERY IN 90 MINUTES",
+    name:"EGG - Organic Tattva",
+    noofitems:"1 Pc",
+    price:"Buy @ Rs.396.00/-",
+    addtocart:"🛒 ADD"
+
+},
+    {imgurl:"https://d1z88p83zuviay.cloudfront.net/ProductVariantThumbnailImages/c60dd0da-1179-477b-8aac-63a2a5f3cca0_425x425.jpg",
+    time:"DELIVERY IN 90 MINUTES", name:"TYPHOO - Organic Tattva",noofitems:"1 Pc",price:"Buy @ Rs.699.00/-",    addtocart:"🛒 ADD"},
+    {imgurl:"https://d1z88p83zuviay.cloudfront.net/ProductVariantThumbnailImages/4c36fca1-3fbb-42c3-a759-6e20057a4cd4_425x425.jpg",
+    time:"DELIVERY IN 90 MINUTES", name:"MASALA UPAMA - Organic Tattva",noofitems:"1 Pc",price:"Buy @ Rs.1441.00/-", addtocart:"🛒 ADD"},
+    {imgurl:"https://d1z88p83zuviay.cloudfront.net/ProductVariantThumbnailImages/1367927_1_425x425.jpg",
+    time:"DELIVERY IN 90 MINUTES", name:"COW GHEE - Organic Tattva",noofitems:"1 Pc",price:"Buy @ Rs.342.00/-", addtocart:"🛒 ADD"}
+]
+
+trendingData.map(function(el){
+    let box2=document.createElement("div")
+    let imgoftrend=document.createElement("img")
+    imgoftrend.setAttribute("src",el.imgurl)
+    imgoftrend.setAttribute("id","trend")
+    
+   
+
+    let timing= document.createElement("p");
+    timing.innerText=el.time
+    timing.style.fontSize="15px"
+    timing.style.marginTop="0px"
+    timing.style.color="maroon"
+
+    let itemname=document.createElement("p")
+    itemname.innerText= el.name
+    itemname.style.fontSize="20px"
+    let numofitem=document.createElement("p")
+    numofitem.innerText= el.noofitems
+    numofitem.style.fontSize="14px"
+    numofitem.style.marginTop="0px"
+
+    let amount=document.createElement("p")
+    amount.innerText=el.price;
+    amount.style.fontSize="14px"
+    amount.style.color="maroon"
+    amount.style.marginTop="0px"
+
+    let atc = document.createElement("button")
+    atc.innerText=el.addtocart;
+    atc.style.width="97px"
+    atc.style.height="31px"
+    atc.style.marginLeft="97px"
+    atc.style.backgroundColor="lightGreen"
+    atc.style.border="none"
+    atc.style.color="white"
+    atc.style.borderRadius="10px"
+    atc.style.cursor="pointer"
+
+    
+    box2.append(imgoftrend,timing,itemname,numofitem,amount,atc)
+
+
+    document.getElementById("inner").append(box2)
+})
+
+
+
+
+
+let curatedData=[
+    {imgurl:"https://d1z88p83zuviay.cloudfront.net/ProductVariantThumbnailImages/bb23e762-38c1-4d51-b9e2-a374eb31b05c_425x425.jpg",
+    time:"DELIVERY IN 90 MINUTES",
+    name:"KASHMIRI PAMPORE ORGANIC ",
+    noofitems:"1 Pc",
+    price:"Buy @ Rs.396.00/-",
+    addtocart:"🛒 ADD"
+
+},
+    {imgurl:"https://d1z88p83zuviay.cloudfront.net/ProductVariantThumbnailImages/4c36fca1-3fbb-42c3-a759-6e20057a4cd4_425x425.jpg",
+    time:"DELIVERY IN 90 MINUTES", name:"ORGANIC TATTVA MASALa",noofitems:"1 Pc",price:"Buy @ Rs.699.00/-",    addtocart:"🛒 ADD"},
+    {imgurl:"https://d1z88p83zuviay.cloudfront.net/ProductVariantThumbnailImages/21fae46a-e213-40fe-b40e-bb41c57cb0c1_425x425.jpg",
+    time:"DELIVERY IN 90 MINUTES", name:"SARDA FARMS A2 MILK 1lt",noofitems:"1 Pc",price:"Buy @ Rs.1441.00/-", addtocart:"🛒 ADD"},
+    {imgurl:"https://d1z88p83zuviay.cloudfront.net/ProductVariantThumbnailImages/12480ed6-49d7-4713-9765-a5894463c110_425x425.JPG",
+    time:"DELIVERY IN 90 MINUTES", name:"NATURES SEMOLINA FINE 500g",noofitems:"1 Pc",price:"Buy @ Rs.342.00/-", addtocart:"🛒 ADD"}
+]
+
+curatedData.map(function(el){
+    let box3=document.createElement("div")
+    let imgoftrend=document.createElement("img")
+    imgoftrend.setAttribute("src",el.imgurl)
+    imgoftrend.setAttribute("id","trend2")
+    
+   
+
+    let timing= document.createElement("p");
+    timing.innerText=el.time
+    timing.style.fontSize="15px"
+    timing.style.marginTop="0px"
+    timing.style.color="maroon"
+
+    let itemname=document.createElement("p")
+    itemname.innerText= el.name
+    itemname.style.fontSize="20px"
+    let numofitem=document.createElement("p")
+    numofitem.innerText= el.noofitems
+    numofitem.style.fontSize="14px"
+    numofitem.style.marginTop="0px"
+
+    let amount=document.createElement("p")
+    amount.innerText=el.price;
+    amount.style.fontSize="14px"
+    amount.style.color="maroon"
+    amount.style.marginTop="0px"
+
+    let atc = document.createElement("button")
+    atc.innerText=el.addtocart;
+    atc.style.width="97px"
+    atc.style.height="31px"
+    atc.style.marginLeft="97px"
+    atc.style.backgroundColor="lightGreen"
+    atc.style.border="none"
+    atc.style.color="white"
+    atc.style.borderRadius="10px"
+    atc.style.cursor="pointer"
+
+    
+    box3.append(imgoftrend,timing,itemname,numofitem,amount,atc)
+    document.getElementById("inner2").append(box3)
+})
+
+let banner=[
+    {img:"	https://www.naturesbasket.co.in/Images/homepageblogbanner/NB_1320x355-blog2.jpg"}
+]
+banner.map(function(ele){
+    let box4=document.createElement("div")
+let banner=document.createElement("img")
+banner.setAttribute("src",ele.img)
+banner.setAttribute("id","banner")
+box4.append(banner)
+document.getElementById("banner").append(box4)
+})
+
+
+
+
+
+
+
+
+let newData=[
+    {imgurl:"https://d1z88p83zuviay.cloudfront.net/ProductVariantThumbnailImages/17d6b165-a222-4e0e-9d2e-20c34236e277_425x425.jpg",
+    time:"DELIVERY IN 90 MINUTES",
+    name:"HA TAPIOCA FLOUR 400G ",
+    noofitems:"1 Pc",
+    price:"Buy @ Rs.396.00/-",
+    addtocart:"🛒 ADD"
+
+},
+    {imgurl:"https://d1z88p83zuviay.cloudfront.net/ProductVariantThumbnailImages/578a02e6-8e0b-4868-9689-5733471e3b87_425x425.jpg",
+    time:"DELIVERY IN 90 MINUTES", name:"Kwality Wall's Ice Cream",noofitems:"1 Pc",price:"Buy @ Rs.699.00/-",    addtocart:"🛒 ADD"},
+    {imgurl:"https://d1z88p83zuviay.cloudfront.net/ProductVariantThumbnailImages/dbffcc93-9bce-442f-837f-d5d5f073c0c0_425x425.jpg",
+    time:"DELIVERY IN 90 MINUTES", name:"Haagen-Dazs Ice Cream",noofitems:"1 Pc",price:"Buy @ Rs.1441.00/-", addtocart:"🛒 ADD"},
+    {imgurl:"https://d1z88p83zuviay.cloudfront.net/ProductVariantThumbnailImages/17d6b165-a222-4e0e-9d2e-20c34236e277_425x425.jpg",
+    time:"DELIVERY IN 90 MINUTES", name:"HA TAPIOCA FLOUR 400G",noofitems:"1 Pc",price:"Buy @ Rs.342.00/-", addtocart:"🛒 ADD"}
+]
+
+newData.map(function(el){
+    let box4=document.createElement("div")
+    let imgoftrend=document.createElement("img")
+    imgoftrend.setAttribute("src",el.imgurl)
+    imgoftrend.setAttribute("id","trend3")
+    
+   
+
+    let timing= document.createElement("p");
+    timing.innerText=el.time
+    timing.style.fontSize="15px"
+    timing.style.marginTop="0px"
+    timing.style.color="maroon"
+
+    let itemname=document.createElement("p")
+    itemname.innerText= el.name
+    itemname.style.fontSize="20px"
+    let numofitem=document.createElement("p")
+    numofitem.innerText= el.noofitems
+    numofitem.style.fontSize="14px"
+    numofitem.style.marginTop="0px"
+
+    let amount=document.createElement("p")
+    amount.innerText=el.price;
+    amount.style.fontSize="14px"
+    amount.style.color="maroon"
+    amount.style.marginTop="0px"
+
+    let atc = document.createElement("button")
+    atc.innerText=el.addtocart;
+    atc.style.width="97px"
+    atc.style.height="31px"
+    atc.style.marginLeft="97px"
+    atc.style.backgroundColor="lightGreen"
+    atc.style.border="none"
+    atc.style.color="white"
+    atc.style.borderRadius="10px"
+    atc.style.cursor="pointer"
+
+    
+    box4.append(imgoftrend,timing,itemname,numofitem,amount,atc)
+    document.getElementById("inner3").append(box4)
+})
+
+let discover=[
+  {text:"OFFER"},
+  {text:"ORGANIC"},
+  {text:"HEALTHY"},
+  {text:"GIFTS"}
+]
+
+discover.map(function(ele){
+  let box5 = document.createElement("div")
+
+  box5.innerText=ele.text
+  box5.style.fontSize="20px"
+
+   document.querySelector("#discover").append(box5)
+
+
+ })
+
+
+
+
+</script>
