@@ -9,6 +9,10 @@
       --:NatureBasket.co.in
     </title>
     <style>
+      body {
+        margin-top: 0px;
+      }
+
       * {
         background-color: #fff;
         /* justify-content: space-between; */
@@ -70,6 +74,7 @@
         margin-bottom: 0%;
         margin-left: 32%;
         height: 0px;
+        margin-top: 10px;
       }
       div > a {
         font-size: 13px;
@@ -395,16 +400,114 @@
         cursor: pointer;
         border: none;
       }
-      #pass {
+      #logindiv {
+        width: 100%;
+        height: 115px;
+        margin-top: 0%;
+        border: px solid red;
+        display: block;
+        background-color: rgb(184, 179, 179);
+      }
+      #box li {
+        display: block;
+        font-size: 13px;
+        /* text-decoration: none; */
+        text-align: right;
+        background-color: rgb(184, 179, 179);
+      }
+      #box {
+        display: flex;
+        gap: 50px;
+        background-color: rgb(184, 179, 179);
+      }
+      #innerdiv {
+        margin: 24px auto 0 230px;
+        float: left;
+        position: relative;
+        justify-content: center;
+        border: px solid black;
+        height: 80px;
+        width: 75%;
+        background-color: rgb(184, 179, 179);
+      }
+      #logind {
+        float: left;
+        display: block;
+        background-color: rgb(184, 179, 179);
+      }
+      #userId,
+      #userpass {
+        text-decoration: none;
+        height: 40px;
+        width: 250px;
+        margin-bottom: 20px;
+        font-size: 20px;
         text-align: center;
-        font-size: 70%;
-        height: 50px;
-        border-radius: 20px;
-        border-color: rgb(169, 155, 155);
+        border: none;
+        box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+      }
+      #loginbutton {
+        width: 80px;
+        height: 70%;
+        font-size: 15px;
+        border: none;
+        background-color: lightgreen;
+        color: white;
+        cursor: pointer;
+        box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+      }
+      #forgotpass {
+        font-size: 12px;
+        margin-top: 5px;
+        color: red;
+        border: none;
+        background-color: rgb(184, 179, 179);
+        cursor: pointer;
+      }
+      #loginviaotp {
+        border: none;
+        height: 30px;
+        font-size: 20px;
+        width: 150px;
+        color: white;
+        background-color: rgb(184, 179, 179);
+        cursor: pointer;
+        box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
       }
     </style>
   </head>
   <body>
+    <div id="logindiv">
+      <div id="innerdiv">
+        <div id="loginid">
+          <ul id="box">
+            <li>
+              <input
+                type="text"
+                placeholder="📧      Email Address"
+                id="userId"
+              />
+            </li>
+            <li>
+              <input
+                type="password"
+                name=""
+                id="userpass"
+                placeholder="🗝️     Enter Password"
+              />
+            </li>
+            <li>
+              <input type="button" value="LOGIN" name="" id="loginbutton" />
+              <p id="forgotpass">forgot password ?</p>
+            </li>
+            <li>
+              <p id="loginviaotp">Login Via Otp</p>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+
     <a
       href="C:\Users\engrt\Desktop\project-unit-2\thundering-self-8895\login.html"
       >Login</a
@@ -750,19 +853,14 @@
             </nav>
           </div>
           <div id="sub">
-            <span>SIGN UP TO STAY UPDATED</span>
+            <span>SUGGESTIONS</span>
             <input
               type="text"
               name=""
               id="holder"
-              placeholder="Enter Your Email Address"
+              placeholder="Type Your Views"
             />
-            <input
-              type="password"
-              id="pass"
-              placeholder="enter your desired password"
-            />
-            <input type="button" name="" id="btn" value="SIGN UP" />
+            <input type="button" name="" id="btn" value="SUBMIT" />
           </div>
         </div>
       </section>
@@ -1208,26 +1306,10 @@
     imageOfCart.setAttribute("id", "cartthree");
     box.append(imageOfCart);
     document.getElementById("carts3").append(box);
+
+
+
+
+    
   });
-
-  document.querySelector("#btn").addEventListener("click", signUp);
-  function signUp(event) {
-    event.preventDefault();
-
-    let emaild = document.querySelector("#holder").value;
-    localStorage.setItem("email", JSON.stringify(emaild));
-
-    let password = document.querySelector("#pass").value;
-    localStorage.setItem("password]", JSON.stringify(password));
-
-    if (emaild == "") {
-      alert("Email Required");
-    } else if (password == "") {
-      alert("Password Required");
-    } else {
-      alert(" Congratulations : Sign-Up Successful");
-      document.querySelector("#holder").value = "";
-      document.querySelector("#pass").value = "";
-    }
-  }
 </script>
