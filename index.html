@@ -94,14 +94,15 @@
       #navbar2 > select {
         height: 100%;
         /* border: 1px solid blue; */
-        color: red;
+        color: maroon;
         width: 20%;
         font-size: 18px;
         border: none;
       }
       #navbar2 > a {
         text-align: center;
-        font-size: 15px;
+        font-size: 14px;
+        margin:auto;
       }
       .bannertop > img {
         height: 376px;
@@ -429,6 +430,7 @@
       <div id="top">
         <div>
           <img
+            id="logo"
             src="https://www.naturesbasket.co.in/Images/logosnew.png?v=2"
             alt=""
           />
@@ -465,13 +467,26 @@
       <div id="navbar2">
         <select id="place">
           <option value="">SHOP BY CATEGORY</option>
+          <option value="">Gift Hampers</option>
+          <option value="">Fruits & Vegetables</option>
+          <option value="">Cheese Meat & Fruit Platter</option>
+          <option value="">Delicatessen & Cheese</option>
+          <option value="">International Cuisine</option>
+          <option value="">Health</option>
+          <option value="">Indian Grocery</option>
+          <option value="">Confectionary & Patesserie</option>
+          <option value="">Meats,Seafood And Eggs</option>
+          <option value="">Snack Bar</option>
+          <option value="">Snacks & Beverages</option>
+          <option value="">Breakfast, Dairy & Bakery</option>
+          <option value="">Instant MealS & Aids</option>
+          <option value="">The Good Food Cafe</option>
         </select>
-        <a href="">MY ORDERS</a>
+        <a id="myorders" href="">MY ORDERS</a>
         <a href="">GIFTING</a>
         <a href="">REWARDS</a>
         <a href="">BLOGS</a>
         <a href="">OFFERS</a>
-        <a href="">BLOGS</a>
         <a href="">CONNOISSEUR’S SELECTION</a>
         <a href="">BOOK STORE VISIT</a>
       </div>
@@ -750,7 +765,7 @@
             </nav>
           </div>
           <div id="sub">
-            <span>SIGN UP TO STAY UPDATED</span>
+            <span>SIGN UP</span>
             <input
               type="text"
               name=""
@@ -771,6 +786,9 @@
 </html>
 
 <script>
+
+
+
   let images = [
     {
       img_url:
@@ -833,6 +851,8 @@
     box.append(imageOfCart, names);
     document.getElementById("carts2").append(box);
   });
+
+  let cartArr=JSON.parse(localStorage.getItem("cart-items"))||[]
 
   let trendingData = [
     {
@@ -909,11 +929,31 @@
     atc.style.color = "white";
     atc.style.borderRadius = "10px";
     atc.style.cursor = "pointer";
+    atc.addEventListener("click",function(){
+      cartArr.push(el)
+      console.log("check")
+      localStorage.setItem("cart-items",JSON.stringify(cartArr))
+      // document.location.href="carthome.html"
+    })
+    
+
+
+
+
+
 
     box2.append(imgoftrend, timing, itemname, numofitem, amount, atc);
 
     document.getElementById("inner").append(box2);
   });
+
+
+
+
+  let cartArr2=JSON.parse(localStorage.getItem("cart-items"))||[]
+
+
+
 
   let curatedData = [
     {
@@ -990,6 +1030,14 @@
     atc.style.color = "white";
     atc.style.borderRadius = "10px";
     atc.style.cursor = "pointer";
+    atc.addEventListener("click",function(){
+      console.log("check")
+
+      cartArr2.push(el)
+      
+      localStorage.setItem("cart-items",JSON.stringify(cartArr2))
+      // document.location.href="carthome.html"
+    })
 
     box3.append(imgoftrend, timing, itemname, numofitem, amount, atc);
     document.getElementById("inner2").append(box3);
@@ -1008,6 +1056,8 @@
     box4.append(banner);
     document.getElementById("banner").append(box4);
   });
+
+  let cartArr3=JSON.parse(localStorage.getItem("cart-items"))||[]
 
   let newData = [
     {
@@ -1084,6 +1134,13 @@
     atc.style.color = "white";
     atc.style.borderRadius = "10px";
     atc.style.cursor = "pointer";
+    atc.addEventListener("click",function(){
+      console.log("check")
+      cartArr3.push(el)
+   
+      localStorage.setItem("cart-items",JSON.stringify(cartArr3))
+      // document.location.href="carthome.html"
+    })
 
     box4.append(imgoftrend, timing, itemname, numofitem, amount, atc);
     document.getElementById("inner3").append(box4);
@@ -1104,6 +1161,8 @@
 
     document.querySelector("#discover").append(box5);
   });
+  let cartArr4=JSON.parse(localStorage.getItem("cart-items"))||[]
+
 
   let discoverData = [
     {
@@ -1180,6 +1239,14 @@
     atc.style.color = "white";
     atc.style.borderRadius = "10px";
     atc.style.cursor = "pointer";
+    atc.addEventListener("click",function(){
+      console.log("check")
+
+      cartArr4.push(el)
+
+      localStorage.setItem("cart-items",JSON.stringify(cartArr4))
+      // document.location.href="carthome.html"
+    })
 
     box5.append(imgoftrend, timing, itemname, numofitem, amount, atc);
     document.getElementById("inner4").append(box5);
@@ -1228,6 +1295,18 @@
       alert(" Congratulations : Sign-Up Successful");
       document.querySelector("#holder").value = "";
       document.querySelector("#pass").value = "";
+      window.location.href = "login.html";
     }
+  }
+  document.querySelector("#logo").addEventListener("click", goToHome);
+  function goToHome(event) {
+    event.preventDefault;
+    window.location.href = "index.html";
+  }
+  document.querySelector("#myorders").addEventListener("click", myOrders);
+  function myOrders(event) {
+    event.preventDefault();
+    alert("Log-in To Avail Offers")
+    window.location.href = "login.html";
   }
 </script>
