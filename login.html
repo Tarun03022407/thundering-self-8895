@@ -943,6 +943,7 @@
     box.append(imageOfCart, names);
     document.getElementById("carts2").append(box);
   });
+  let cartArr=JSON.parse(localStorage.getItem("cart-items"))||[]
 
   let trendingData = [
     {
@@ -1019,11 +1020,22 @@
     atc.style.color = "white";
     atc.style.borderRadius = "10px";
     atc.style.cursor = "pointer";
+    atc.addEventListener("click",function(){
+      console.log("check")
+
+      cartArr.push(el)
+
+      localStorage.setItem("cart-items",JSON.stringify(cartArr))
+      // document.location.href="carthome.html"
+    })
+
 
     box2.append(imgoftrend, timing, itemname, numofitem, amount, atc);
 
     document.getElementById("inner").append(box2);
   });
+  let cartArr2=JSON.parse(localStorage.getItem("cart-items"))||[]
+
 
   let curatedData = [
     {
@@ -1100,6 +1112,15 @@
     atc.style.color = "white";
     atc.style.borderRadius = "10px";
     atc.style.cursor = "pointer";
+    atc.addEventListener("click",function(){
+      console.log("check")
+
+      cartArr2.push(el)
+
+      localStorage.setItem("cart-items",JSON.stringify(cartArr2))
+      // document.location.href="carthome.html"
+    })
+
 
     box3.append(imgoftrend, timing, itemname, numofitem, amount, atc);
     document.getElementById("inner2").append(box3);
@@ -1118,6 +1139,8 @@
     box4.append(banner);
     document.getElementById("banner").append(box4);
   });
+  let cartArr3=JSON.parse(localStorage.getItem("cart-items"))||[]
+
 
   let newData = [
     {
@@ -1194,6 +1217,15 @@
     atc.style.color = "white";
     atc.style.borderRadius = "10px";
     atc.style.cursor = "pointer";
+    atc.addEventListener("click",function(){
+      console.log("check")
+
+      cartArr3.push(el)
+
+      localStorage.setItem("cart-items",JSON.stringify(cartArr3))
+      // document.location.href="carthome.html"
+    })
+
 
     box4.append(imgoftrend, timing, itemname, numofitem, amount, atc);
     document.getElementById("inner3").append(box4);
@@ -1214,6 +1246,8 @@
 
     document.querySelector("#discover").append(box5);
   });
+
+  let cartArr4=JSON.parse(localStorage.getItem("cart-items"))||[]
 
   let discoverData = [
     {
@@ -1290,6 +1324,15 @@
     atc.style.color = "white";
     atc.style.borderRadius = "10px";
     atc.style.cursor = "pointer";
+    atc.addEventListener("click",function(){
+      console.log("check")
+
+      cartArr4.push(el)
+
+      localStorage.setItem("cart-items",JSON.stringify(cartArr4))
+      // document.location.href="carthome.html"
+    })
+
 
     box5.append(imgoftrend, timing, itemname, numofitem, amount, atc);
     document.getElementById("inner4").append(box5);
