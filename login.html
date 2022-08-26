@@ -1306,10 +1306,39 @@
     imageOfCart.setAttribute("id", "cartthree");
     box.append(imageOfCart);
     document.getElementById("carts3").append(box);
-
-
-
-
-    
   });
+  
+  document.querySelector("#loginbutton").addEventListener("click",login)
+  function login(event){
+    event.preventDefault()
+    let emailid=document.getElementById("userId").value 
+    let enteredEmail= localStorage.getItem("email")
+
+    let paSS=document.getElementById("userpass").value 
+    let enteredPass= localStorage.getItem("password")
+
+
+    if(emailid != JSON.parse(enteredEmail)){
+      alert("Invalid Email Id")
+    }else if(paSS != JSON.parse(enteredPass)){
+      alert("Invalid Password")
+    }else if(emailid==""){
+      alert("Something went wrong")
+    }else if(paSS==""){
+      alert("Something went wrong")
+    }
+    
+    else{
+      alert("Login-Succesful")
+    }
+
+
+
+
+  }
+
+   
+
+
+
 </script>
