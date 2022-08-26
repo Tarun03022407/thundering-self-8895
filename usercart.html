@@ -148,7 +148,7 @@ button{
   <div id="container">
     <div id="top">
       <div>
-        <img
+        <img id="logo"
           src="https://www.naturesbasket.co.in/Images/logosnew.png?v=2"
           alt=""
         />
@@ -283,6 +283,11 @@ orders.map(function (el,i) {
 
     document.getElementById("contain").append(box2);
   });
+  document.querySelector("#logo").addEventListener("click",goToHome)
+function goToHome(event){
+  event.preventDefault
+  window.location.href="userpage.html"
+}
     document.querySelector("#signout").addEventListener("click",signOut)
     function signOut(event){
         event.preventDefault()
