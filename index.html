@@ -102,7 +102,7 @@
       #navbar2 > a {
         text-align: center;
         font-size: 14px;
-        margin:auto;
+        margin: auto;
       }
       .bannertop > img {
         height: 376px;
@@ -786,9 +786,6 @@
 </html>
 
 <script>
-
-
-
   let images = [
     {
       img_url:
@@ -852,7 +849,7 @@
     document.getElementById("carts2").append(box);
   });
 
-  let cartArr=JSON.parse(localStorage.getItem("cart-items"))||[]
+  let cartArr = JSON.parse(localStorage.getItem("cart-items")) || [];
 
   let trendingData = [
     {
@@ -929,31 +926,19 @@
     atc.style.color = "white";
     atc.style.borderRadius = "10px";
     atc.style.cursor = "pointer";
-    atc.addEventListener("click",function(){
-      cartArr.push(el)
-      console.log("check")
-      localStorage.setItem("cart-items",JSON.stringify(cartArr))
+    atc.addEventListener("click", function () {
+      cartArr.push(el);
+      console.log("check");
+      localStorage.setItem("cart-items", JSON.stringify(cartArr));
       // document.location.href="carthome.html"
-    })
-    
-
-
-
-
-
+    });
 
     box2.append(imgoftrend, timing, itemname, numofitem, amount, atc);
 
     document.getElementById("inner").append(box2);
   });
 
-
-
-
-  let cartArr2=JSON.parse(localStorage.getItem("cart-items"))||[]
-
-
-
+  let cartArr2 = JSON.parse(localStorage.getItem("cart-items")) || [];
 
   let curatedData = [
     {
@@ -1030,14 +1015,14 @@
     atc.style.color = "white";
     atc.style.borderRadius = "10px";
     atc.style.cursor = "pointer";
-    atc.addEventListener("click",function(){
-      console.log("check")
+    atc.addEventListener("click", function () {
+      console.log("check");
 
-      cartArr2.push(el)
-      
-      localStorage.setItem("cart-items",JSON.stringify(cartArr2))
+      cartArr2.push(el);
+
+      localStorage.setItem("cart-items", JSON.stringify(cartArr2));
       // document.location.href="carthome.html"
-    })
+    });
 
     box3.append(imgoftrend, timing, itemname, numofitem, amount, atc);
     document.getElementById("inner2").append(box3);
@@ -1057,7 +1042,7 @@
     document.getElementById("banner").append(box4);
   });
 
-  let cartArr3=JSON.parse(localStorage.getItem("cart-items"))||[]
+  let cartArr3 = JSON.parse(localStorage.getItem("cart-items")) || [];
 
   let newData = [
     {
@@ -1134,13 +1119,13 @@
     atc.style.color = "white";
     atc.style.borderRadius = "10px";
     atc.style.cursor = "pointer";
-    atc.addEventListener("click",function(){
-      console.log("check")
-      cartArr3.push(el)
-   
-      localStorage.setItem("cart-items",JSON.stringify(cartArr3))
+    atc.addEventListener("click", function () {
+      console.log("check");
+      cartArr3.push(el);
+
+      localStorage.setItem("cart-items", JSON.stringify(cartArr3));
       // document.location.href="carthome.html"
-    })
+    });
 
     box4.append(imgoftrend, timing, itemname, numofitem, amount, atc);
     document.getElementById("inner3").append(box4);
@@ -1161,8 +1146,7 @@
 
     document.querySelector("#discover").append(box5);
   });
-  let cartArr4=JSON.parse(localStorage.getItem("cart-items"))||[]
-
+  let cartArr4 = JSON.parse(localStorage.getItem("cart-items")) || [];
 
   let discoverData = [
     {
@@ -1239,14 +1223,14 @@
     atc.style.color = "white";
     atc.style.borderRadius = "10px";
     atc.style.cursor = "pointer";
-    atc.addEventListener("click",function(){
-      console.log("check")
+    atc.addEventListener("click", function () {
+      console.log("check");
 
-      cartArr4.push(el)
+      cartArr4.push(el);
 
-      localStorage.setItem("cart-items",JSON.stringify(cartArr4))
+      localStorage.setItem("cart-items", JSON.stringify(cartArr4));
       // document.location.href="carthome.html"
-    })
+    });
 
     box5.append(imgoftrend, timing, itemname, numofitem, amount, atc);
     document.getElementById("inner4").append(box5);
@@ -1306,7 +1290,7 @@
   document.querySelector("#myorders").addEventListener("click", myOrders);
   function myOrders(event) {
     event.preventDefault();
-    alert("Log-in To Avail Offers")
+    alert("Log-in To Avail Offers");
     window.location.href = "login.html";
   }
 </script>
