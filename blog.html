@@ -1,0 +1,398 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style type="text/css">
+        @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;800;900&display=swap");
+        *{
+            padding: 0px;
+            margin: 0;
+            box-sizing: border-box;
+        }
+        body{
+            font-family: "Poppins",Arial, sans-serif;
+            background: #fff;
+            font-size: 14px;
+            line-height: 1.8;
+            font-weight: 400;
+            color: #999;
+        }
+        nav{
+          
+            background-color: black;
+            width: 100%;
+            height: 50px;
+           /* border-radius: 13px; */
+           align-items: center;
+            display: flex;
+            /* justify-content: space-between; */
+            /* margin: 5px 10px; */
+            position: sticky;
+        }
+        div:nth-child(1)>img{
+            /* font-size: 1.5rem; */
+            /* padding-left: 1rem; */
+            width: 75%;
+            margin-left:5px ;
+            cursor: pointer;
+        }
+        div:nth-child(2){
+            margin-right: 2rem;
+        }
+        ul li{
+            display: inline-block;
+        }
+
+        ul li>a{
+            color: white;
+            text-decoration: none;
+            font-size: 11px;
+            /* padding: 8px 16px; */
+            transition: 0.6s ease;
+            border-radius: 10px;
+            margin: 10px;
+
+        }
+        #se{
+            height: 100%;
+            width: 200px;
+            margin: auto;
+           align-items: center;
+           margin-top: 3px;
+           color: white;
+        }
+        #search{
+            height: 80%;
+            width: 100%;
+           align-items: center;
+           border-radius: 20px;
+           font-size: 20px;
+           background-color: rgb(45, 44, 44) ;
+           color: white;
+           text-align: center; 
+           
+            
+        }
+      
+      marquee {
+        cursor: pointer;
+        /* margin: 10px; */
+        margin-top: 0px;
+      }
+      marquee>img{
+        height: 500px;
+        width: 80%;
+      }
+      #carts {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        /* gap: 10px; */
+        margin-top: 30px;
+        
+        
+        
+      }
+      #cart {
+        width: 95%;
+        height: 300px;
+        border-radius: 10px;
+        border: px solid red;
+        box-shadow: rgba(9, 30, 66, 0.25) 0px 4px 8px -2px,
+          rgba(9, 30, 66, 0.08) 0px 0px 0px 1px;
+        margin-left: 10px;
+        /* margin: auto; */
+      }
+
+
+
+      #carts2 {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        /* gap: 10px; */
+        margin-top: 30px;
+        
+        
+        
+      }
+      #cart2 {
+        width: 95%;
+        height: 300px;
+        border-radius: 10px;
+        border: px solid red;
+        box-shadow: rgba(9, 30, 66, 0.25) 0px 4px 8px -2px,
+          rgba(9, 30, 66, 0.08) 0px 0px 0px 1px;
+        margin-left: 10px;
+        /* margin: auto; */
+      }
+      #trendtext{
+        color: black;
+        font-size: 40px;
+        margin: 120px 0 0 60px;
+      }
+      #pics {
+        display: grid;
+        grid-template-columns: repeat(2,1fr);
+        gap: 10px;
+      }
+      #pics>img{
+        height:250px;
+        width: 400px;
+        margin-top: 120px;
+        margin-left: 30px;
+
+      }
+      #anc{
+        margin-top: 50px;
+      }
+      #main{
+        display: flex;
+
+      }
+      #anc>div{
+       margin-left: 50px;
+        margin-top: 15px;
+        
+      }
+      #hmm{
+        margin-top: 40px;
+      }
+      #anc>div a{
+        text-decoration: none;
+        font-size: 15px;
+        color: grey;
+      }
+      #category{
+        font-size: 30px;
+        margin-left: 75px
+      }
+      #category2{
+        padding-top: 40px;
+      }
+
+    </style>
+<body>
+    <nav>
+        <div>
+            <img src="https://blog.naturesbasket.co.in/wp-content/uploads/2019/09/300-x-300px.png" alt="">
+        </div>
+        <div>
+            <ul>
+                <li>
+                    <a href="" id="homepage">HOME</a>
+                </li>
+                <li>
+                    <a href="">HEALTHY FOOD</a>
+                </li>
+                <li>
+                    <a href="">FOOD RECIPES</a>
+                </li>
+                <li>
+                    <a href="">BAKING</a>
+                </li>
+                <li>
+                    <a href="">CUISINE</a>
+                </li>
+                <li>
+                    <a href="">FOOD TRENDS</a>
+                </li>
+                <li>
+                    <a href="">GIFT HAMPERS</a>
+                </li>
+                <li>
+                    <a href="">STORE LOCATOR</a>
+                </li>
+            </ul>
+        </div>
+        <div id="se">
+            <input type="text" name="" id="search" placeholder="Search    💣">
+        </div>
+
+       
+
+
+
+    </nav>
+
+
+    <marquee behavior="alternate" direction="left">
+        <img src="https://blog.naturesbasket.co.in/wp-content/uploads/2018/09/healthy-food-2-1024x683.jpeg" alt="">
+        <img src="https://blog.naturesbasket.co.in/wp-content/uploads/2018/09/whats-cooking1-1024x683.jpeg" alt="">
+        <img src="https://blog.naturesbasket.co.in/wp-content/uploads/2021/10/shutterstock_1901440126.jpg" alt="">
+        <img src="https://blog.naturesbasket.co.in/wp-content/uploads/2021/10/shutterstock_1518092828-1024x683.jpeg" alt="">
+        <img src="https://blog.naturesbasket.co.in/wp-content/uploads/2021/08/1408065212.jpg" alt="">
+        <img src="https://blog.naturesbasket.co.in/wp-content/uploads/2018/10/Blogger-image.png" alt="">
+        <img src="https://blog.naturesbasket.co.in/wp-content/uploads/2018/09/meat-1024x683.jpeg" alt="">
+    </marquee>
+
+    <div id="carts"></div>
+    <div id="carts2"></div>
+
+    <p id="trendtext">Trending Now</p>
+    <div id="main">
+        <div id="pics">
+          
+                <img src="https://blog.naturesbasket.co.in/wp-content/uploads/2021/10/shutterstock_386792203.jpg" alt="">
+            
+                <img src="https://blog.naturesbasket.co.in/wp-content/uploads/2021/10/shutterstock_1901440126.jpg" alt="">
+
+            
+            
+                <img src="https://blog.naturesbasket.co.in/wp-content/uploads/2021/10/shutterstock_1518092828-1024x683.jpeg" alt="">
+            
+                <img src="https://blog.naturesbasket.co.in/wp-content/uploads/2021/10/shutterstock_1049157986.jpg" alt="">
+            
+                <img src="https://blog.naturesbasket.co.in/wp-content/uploads/2021/09/shutterstock_1801262779.jpg" alt="">
+           
+                <img src="https://blog.naturesbasket.co.in/wp-content/uploads/2021/09/shutterstock_1412547623.jpg" alt="">
+            
+                <img src="https://blog.naturesbasket.co.in/wp-content/uploads/2021/09/shutterstock_630945068.jpg" alt="">
+           
+                <img src="https://blog.naturesbasket.co.in/wp-content/uploads/2021/08/1408065212.jpg" alt="">
+            
+                <img src="https://blog.naturesbasket.co.in/wp-content/uploads/2021/08/shutterstock_639667498.jpg" alt="">
+          
+                <img src="https://blog.naturesbasket.co.in/wp-content/uploads/2021/08/shutterstock_657892168.jpg" alt="">
+          
+
+        </div>
+        <div id="hmm">
+        <p id="category">Categories</p>
+        <div id="anc">
+            <div><a href="">Baking (11)</a></div>
+            <div><a href="">Beverages (1)</a></div>
+            <div><a href="">Breads (9)</a></div>
+            <div><a href="">Breakfast Recipes (22)</a></div>
+            <div><a href="">Cakes,cupcakes & Pastries (20)</a></div>
+            <div><a href="">Chinese Food (3)</a></div>
+            <div><a href="">Continental Food (15)</a></div>
+            <div><a href="">Cooking Techniques (26)</a></div>
+            <div><a href="">Cuisine (9)</a></div>
+            <div><a href="">Dessert Recipes (11)</a></div>
+            <div><a href="">Diet Food (43)</a></div>
+            <div><a href="">Dip Recipes (5)</a></div>
+            <div><a href="">Easy Recipes (11)</a></div>
+            <div><a href="">Festival Recipes (76)</a></div>
+            <div><a href="">Food Benefits (71)</a></div>
+            <div><a href="">Food Presentation (15)</a></div>
+            <div><a href="">Food Recipes (271)</a></div>
+            <div><a href="">Food Trends (8)</a></div>
+            <div><a href="">Fruit Recipes (49)</a></div>
+            <div><a href="">Gift Hampers (19)</a></div>
+            <div><a href="">Healthy Dips (6)</a></div>
+            <div><a href="">Healthy Food (15)</a></div>
+            <div><a href="">Food Snack (11)</a></div>
+            <div><a href="">Home Remedies (3)</a></div>
+            <div><a href="">Indian Food (14)</a></div>
+            <div><a href="">Italian Food (12)</a></div>
+            <div><a href="">Juicing Recipes (8)</a></div>
+            <div><a href="">Lunch Recipes (6)</a></div>
+            <div><a href="">Meat Recipes (20)</a></div>
+            <div><a href="">Mexican Food (7)</a></div>
+            <div><a href="">News (9)</a></div>
+            <div><a href="">Non-Vegetarian Recipes (31)</a></div>
+            <div><a href="">Party Recipes (23)</a></div>
+            <div><a href="">Quick Recipes (27)</a></div>
+            <div><a href="">Recipes For Kids (13)</a></div>
+            <div><a href="">Rice Recipes (23)</a></div>
+            <div><a href="">Seafood Recipes (11)</a></div>
+            <div><a href="">Seeds (1)</a></div>
+            <div><a href="">Soups And Salads (27)</a></div>
+            <div><a href="">Thai Food (12)</a></div>
+            <div><a href="">Uncategorized (5)</a></div>
+            <div><a href="">Vegan Recipes (17)</a></div>
+            <div><a href="">Vegetarian Recipes (11)</a></div>
+            <div><a href="">Wine & Beer (2)</a></div>
+        </div>
+        <!-- <div><p id="category2" style="margin-left: 100px;" >Popular Posts</p></div>
+        <div><a href="">sffghth</a></div> -->
+    
+    </div>
+
+
+    </div>
+</body>
+    
+
+</html>
+<script>
+    let images = [
+    {
+      img_url:
+        "https://blog.naturesbasket.co.in/wp-content/uploads/2018/09/healthy-food-2-1024x683.jpeg",
+      name: "Healthy Food",
+    },
+    {
+      img_url:
+        "https://blog.naturesbasket.co.in/wp-content/uploads/2018/09/recipes1-1024x683.jpeg",
+      name: "Food Recipes",
+    },
+    {
+      img_url:
+        "https://blog.naturesbasket.co.in/wp-content/uploads/2018/09/sweets--1024x683.jpeg",
+      name: "Baking",
+    },
+   
+  ];
+
+  images.map(function (elem) {
+    let box = document.createElement("div");
+
+    let imageOfCart = document.createElement("img");
+    imageOfCart.setAttribute("src", elem.img_url);
+    imageOfCart.setAttribute("id", "cart");
+    imageOfCart.style.width="95%"
+    let names = document.createElement("p");
+    names.style.marginLeft = "35%";
+    names.style.fontSize = "17px";
+    names.style.marginTop = "0px";
+    names.innerText = elem.name;
+
+    box.append(imageOfCart, names);
+    document.getElementById("carts").append(box);
+  });
+
+  let images2 = [
+    {
+      img_url:
+        "https://blog.naturesbasket.co.in/wp-content/uploads/2018/09/meat-1024x683.jpeg",
+      name: "Seafood Recipes",
+    },
+    {
+      img_url:
+        "https://blog.naturesbasket.co.in/wp-content/uploads/2018/09/whats-cooking1-1024x683.jpeg",
+      name: "Food Trends",
+    },
+    {
+      img_url:
+        "https://blog.naturesbasket.co.in/wp-content/uploads/2018/09/news-1024x680.jpeg",
+      name: "Gift Hampers",
+    },
+   
+  ];
+
+  images2.map(function (elem) {
+    let box = document.createElement("div");
+
+    let imageOfCart = document.createElement("img");
+    imageOfCart.setAttribute("src", elem.img_url);
+    imageOfCart.setAttribute("id", "cart2");
+    imageOfCart.style.width="95%"
+    let names = document.createElement("p");
+    names.style.marginLeft = "35%";
+    names.style.fontSize = "17px";
+    names.style.marginTop = "0px";
+    names.innerText = elem.name;
+
+    box.append(imageOfCart, names);
+    document.getElementById("carts2").append(box);
+  });
+  document.querySelector("#homepage").addEventListener("click",home);
+  function home(event){
+    event.preventDefault()
+    console.log("check")
+    window.location.href="index.html"
+  }
+</script>

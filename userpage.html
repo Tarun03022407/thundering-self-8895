@@ -482,7 +482,7 @@
         <a href="" id="myorders">MY ORDERS</a>
         <a href="">GIFTING</a>
         <a href="">REWARDS</a>
-        <a href="">BLOGS</a>
+        <a href="" id="blogs">BLOGS</a>
         <a href="">OFFERS</a>
         <a href="">CONNOISSEUR’S SELECTION</a>
         <a href="">BOOK STORE VISIT</a>
@@ -1269,6 +1269,11 @@ document.querySelector("#logo").addEventListener("click", goToHome);
     window.location.href = "usercart.html";
   }
   
-
+  document.querySelector("#blogs").addEventListener("click",blog);
+  function blog(event){
+    event.preventDefault()
+    console.log("check")
+    window.location.href="blog.html"
+  }
 
 </script>
