@@ -5,8 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>
-      Online Supermarket & Premium Grocery Shopping Store In India
-      --:NatureBasket.co.in
+     User||--:NatureBasket.co.in
     </title>
     <style>
       * {
@@ -103,6 +102,7 @@
         text-align: center;
         font-size: 14px;
         margin: auto;
+        
       }
       .bannertop > img {
         height: 376px;
@@ -406,10 +406,8 @@
     </style>
   </head>
   <body>
-    <a
-      href="C:\Users\engrt\Desktop\project-unit-2\thundering-self-8895\login.html"
-      >Login</a
-    >
+    <p><u>Welcome To Your Profile</u></p>
+    <a href="C:\Users\engrt\Desktop\project-unit-2\thundering-self-8895\index.html">Log Out</a>
 
     <div id="uppernav">
       <div>
@@ -429,8 +427,7 @@
     <div id="container">
       <div id="top">
         <div>
-          <img
-            id="logo"
+          <img id="logo"
             src="https://www.naturesbasket.co.in/Images/logosnew.png?v=2"
             alt=""
           />
@@ -482,7 +479,7 @@
           <option value="">Instant MealS & Aids</option>
           <option value="">The Good Food Cafe</option>
         </select>
-        <a id="myorders" href="">MY ORDERS</a>
+        <a href="" id="myorders">MY ORDERS</a>
         <a href="">GIFTING</a>
         <a href="">REWARDS</a>
         <a href="">BLOGS</a>
@@ -765,19 +762,15 @@
             </nav>
           </div>
           <div id="sub">
-            <span>SIGN UP</span>
+            <span>YOUR SUGGESTION</span>
             <input
               type="text"
               name=""
               id="holder"
-              placeholder="Enter Your Email Address"
+              placeholder="Enter Your Suggestion"
             />
-            <input
-              type="password"
-              id="pass"
-              placeholder="enter your desired password"
-            />
-            <input type="button" name="" id="btn" value="SIGN UP" />
+            
+            <input type="button" name="" id="btn" value="SUBMIT" />
           </div>
         </div>
       </section>
@@ -848,8 +841,8 @@
     box.append(imageOfCart, names);
     document.getElementById("carts2").append(box);
   });
+  let cartArr=JSON.parse(localStorage.getItem("cart-items"))||[]
 
-  let cartArr = JSON.parse(localStorage.getItem("cart-items")) || [];
 
   let trendingData = [
     {
@@ -926,19 +919,18 @@
     atc.style.color = "white";
     atc.style.borderRadius = "10px";
     atc.style.cursor = "pointer";
-    atc.addEventListener("click", function () {
-      cartArr.push(el);
-      console.log("check");
-      localStorage.setItem("cart-items", JSON.stringify(cartArr));
-      // document.location.href="carthome.html"
-    });
+    atc.addEventListener("click",function(){
+      console.log("check")
+      cartArr.push(el)
+      localStorage.setItem("cart-items",JSON.stringify(cartArr))
+    })
 
     box2.append(imgoftrend, timing, itemname, numofitem, amount, atc);
 
     document.getElementById("inner").append(box2);
   });
+  let cartArr2=JSON.parse(localStorage.getItem("cart-items"))||[]
 
-  let cartArr2 = JSON.parse(localStorage.getItem("cart-items")) || [];
 
   let curatedData = [
     {
@@ -1015,14 +1007,11 @@
     atc.style.color = "white";
     atc.style.borderRadius = "10px";
     atc.style.cursor = "pointer";
-    atc.addEventListener("click", function () {
-      console.log("check");
-
-      cartArr2.push(el);
-
-      localStorage.setItem("cart-items", JSON.stringify(cartArr2));
-      // document.location.href="carthome.html"
-    });
+    atc.addEventListener("click",function(){
+      console.log("check")
+      cartArr2.push(el)
+      localStorage.setItem("cart-items",JSON.stringify(cartArr2))
+    })
 
     box3.append(imgoftrend, timing, itemname, numofitem, amount, atc);
     document.getElementById("inner2").append(box3);
@@ -1042,7 +1031,7 @@
     document.getElementById("banner").append(box4);
   });
 
-  let cartArr3 = JSON.parse(localStorage.getItem("cart-items")) || [];
+  let cartArr3=JSON.parse(localStorage.getItem("cart-items"))||[]
 
   let newData = [
     {
@@ -1119,13 +1108,11 @@
     atc.style.color = "white";
     atc.style.borderRadius = "10px";
     atc.style.cursor = "pointer";
-    atc.addEventListener("click", function () {
-      console.log("check");
-      cartArr3.push(el);
-
-      localStorage.setItem("cart-items", JSON.stringify(cartArr3));
-      // document.location.href="carthome.html"
-    });
+    atc.addEventListener("click",function(){
+      console.log("check")
+      cartArr3.push(el)
+      localStorage.setItem("cart-items",JSON.stringify(cartArr3))
+    })
 
     box4.append(imgoftrend, timing, itemname, numofitem, amount, atc);
     document.getElementById("inner3").append(box4);
@@ -1146,7 +1133,8 @@
 
     document.querySelector("#discover").append(box5);
   });
-  let cartArr4 = JSON.parse(localStorage.getItem("cart-items")) || [];
+  let cartArr4=JSON.parse(localStorage.getItem("cart-items"))||[]
+
 
   let discoverData = [
     {
@@ -1223,14 +1211,14 @@
     atc.style.color = "white";
     atc.style.borderRadius = "10px";
     atc.style.cursor = "pointer";
-    atc.addEventListener("click", function () {
-      console.log("check");
+    atc.addEventListener("click",function(){
+      console.log("check")
 
-      cartArr4.push(el);
+      cartArr4.push(el)
 
-      localStorage.setItem("cart-items", JSON.stringify(cartArr4));
+      localStorage.setItem("cart-items",JSON.stringify(cartArr4))
       // document.location.href="carthome.html"
-    });
+    })
 
     box5.append(imgoftrend, timing, itemname, numofitem, amount, atc);
     document.getElementById("inner4").append(box5);
@@ -1260,37 +1248,27 @@
     box.append(imageOfCart);
     document.getElementById("carts3").append(box);
   });
+  document.querySelector("#btn").addEventListener("click", suggestion);
+function suggestion(event){
+  event.preventDefault()
+  let txt=document.getElementById("holder").value
+    localStorage.setItem("Suggestion", JSON.stringify(txt));
+    
+  
+}
 
-  document.querySelector("#btn").addEventListener("click", signUp);
-  function signUp(event) {
-    event.preventDefault();
-
-    let emaild = document.querySelector("#holder").value;
-    localStorage.setItem("email", JSON.stringify(emaild));
-
-    let password = document.querySelector("#pass").value;
-    localStorage.setItem("password", JSON.stringify(password));
-
-    if (emaild == "") {
-      alert("Email Required");
-    } else if (password == "") {
-      alert("Password Required");
-    } else {
-      alert(" Congratulations : Sign-Up Successful");
-      document.querySelector("#holder").value = "";
-      document.querySelector("#pass").value = "";
-      window.location.href = "login.html";
-    }
-  }
-  document.querySelector("#logo").addEventListener("click", goToHome);
+document.querySelector("#logo").addEventListener("click", goToHome);
   function goToHome(event) {
     event.preventDefault;
-    window.location.href = "index.html";
+    window.location.href = "userpage.html";
   }
   document.querySelector("#myorders").addEventListener("click", myOrders);
   function myOrders(event) {
     event.preventDefault();
-    alert("Log-in To Avail Offers");
-    window.location.href = "login.html";
+
+    window.location.href = "usercart.html";
   }
+  
+
+
 </script>

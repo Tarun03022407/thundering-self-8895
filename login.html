@@ -9,6 +9,10 @@
       --:NatureBasket.co.in
     </title>
     <style>
+      body {
+        margin-top: 0px;
+      }
+
       * {
         background-color: #fff;
         /* justify-content: space-between; */
@@ -70,6 +74,7 @@
         margin-bottom: 0%;
         margin-left: 32%;
         height: 0px;
+        margin-top: 10px;
       }
       div > a {
         font-size: 13px;
@@ -396,20 +401,115 @@
         cursor: pointer;
         border: none;
       }
-      #pass {
+      #logindiv {
+        width: 100%;
+        height: 115px;
+        margin-top: 0%;
+        border: px solid red;
+        display: block;
+        background-color: rgb(184, 179, 179);
+      }
+      #box li {
+        display: block;
+        font-size: 13px;
+        /* text-decoration: none; */
+        text-align: right;
+        background-color: rgb(184, 179, 179);
+      }
+      #box {
+        display: flex;
+        gap: 50px;
+        background-color: rgb(184, 179, 179);
+      }
+      #innerdiv {
+        margin: 24px auto 0 230px;
+        float: left;
+        position: relative;
+        justify-content: center;
+        border: px solid black;
+        height: 80px;
+        width: 75%;
+        background-color: rgb(184, 179, 179);
+      }
+      #logind {
+        float: left;
+        display: block;
+        background-color: rgb(184, 179, 179);
+      }
+      #userId,
+      #userpass {
+        text-decoration: none;
+        height: 40px;
+        width: 250px;
+        margin-bottom: 20px;
+        font-size: 20px;
         text-align: center;
-        font-size: 70%;
-        height: 50px;
-        border-radius: 20px;
-        border-color: rgb(169, 155, 155);
+        border: none;
+        box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+      }
+      #loginbutton {
+        width: 80px;
+        height: 70%;
+        font-size: 15px;
+        border: none;
+        background-color: lightgreen;
+        color: white;
+        cursor: pointer;
+        box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+      }
+      #forgotpass {
+        font-size: 12px;
+        margin-top: 5px;
+        color: red;
+        border: none;
+        background-color: rgb(184, 179, 179);
+        cursor: pointer;
+      }
+      #loginviaotp {
+        border: none;
+        height: 30px;
+        font-size: 20px;
+        width: 150px;
+        color: white;
+        background-color: rgb(184, 179, 179);
+        cursor: pointer;
+        box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
       }
     </style>
   </head>
   <body>
-    <a
-      href="C:\Users\engrt\Desktop\project-unit-2\thundering-self-8895\login.html"
-      >Login</a
-    >
+    <div id="logindiv">
+      <div id="innerdiv">
+        <div id="loginid">
+          <ul id="box">
+            <li>
+              <input
+                type="text"
+                placeholder="📧      Email Address"
+                id="userId"
+              />
+            </li>
+            <li>
+              <input
+                type="password"
+                name=""
+                id="userpass"
+                placeholder="🗝️     Enter Password"
+              />
+            </li>
+            <li>
+              <input type="button" value="LOGIN" name="" id="loginbutton" />
+              <p id="forgotpass">forgot password ?</p>
+            </li>
+            <li>
+              <p id="loginviaotp">Login Via Otp</p>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+
+
 
     <div id="uppernav">
       <div>
@@ -429,8 +529,7 @@
     <div id="container">
       <div id="top">
         <div>
-          <img
-            id="logo"
+          <img id="logo"
             src="https://www.naturesbasket.co.in/Images/logosnew.png?v=2"
             alt=""
           />
@@ -482,7 +581,7 @@
           <option value="">Instant MealS & Aids</option>
           <option value="">The Good Food Cafe</option>
         </select>
-        <a id="myorders" href="">MY ORDERS</a>
+        <a href="" id="myorders">MY ORDERS</a>
         <a href="">GIFTING</a>
         <a href="">REWARDS</a>
         <a href="">BLOGS</a>
@@ -765,19 +864,15 @@
             </nav>
           </div>
           <div id="sub">
-            <span>SIGN UP</span>
+            <span>Your Suggestions</span>
             <input
               type="text"
               name=""
               id="holder"
-              placeholder="Enter Your Email Address"
+              placeholder="Enter Your Suggestions"
             />
-            <input
-              type="password"
-              id="pass"
-              placeholder="enter your desired password"
-            />
-            <input type="button" name="" id="btn" value="SIGN UP" />
+           
+            <input type="button" name="" id="btn" value="SUBMIT" />
           </div>
         </div>
       </section>
@@ -848,8 +943,7 @@
     box.append(imageOfCart, names);
     document.getElementById("carts2").append(box);
   });
-
-  let cartArr = JSON.parse(localStorage.getItem("cart-items")) || [];
+  let cartArr=JSON.parse(localStorage.getItem("cart-items"))||[]
 
   let trendingData = [
     {
@@ -926,19 +1020,22 @@
     atc.style.color = "white";
     atc.style.borderRadius = "10px";
     atc.style.cursor = "pointer";
-    atc.addEventListener("click", function () {
-      cartArr.push(el);
-      console.log("check");
-      localStorage.setItem("cart-items", JSON.stringify(cartArr));
+    atc.addEventListener("click",function(){
+      console.log("check")
+
+      cartArr.push(el)
+
+      localStorage.setItem("cart-items",JSON.stringify(cartArr))
       // document.location.href="carthome.html"
-    });
+    })
+
 
     box2.append(imgoftrend, timing, itemname, numofitem, amount, atc);
 
     document.getElementById("inner").append(box2);
   });
+  let cartArr2=JSON.parse(localStorage.getItem("cart-items"))||[]
 
-  let cartArr2 = JSON.parse(localStorage.getItem("cart-items")) || [];
 
   let curatedData = [
     {
@@ -1015,14 +1112,15 @@
     atc.style.color = "white";
     atc.style.borderRadius = "10px";
     atc.style.cursor = "pointer";
-    atc.addEventListener("click", function () {
-      console.log("check");
+    atc.addEventListener("click",function(){
+      console.log("check")
 
-      cartArr2.push(el);
+      cartArr2.push(el)
 
-      localStorage.setItem("cart-items", JSON.stringify(cartArr2));
+      localStorage.setItem("cart-items",JSON.stringify(cartArr2))
       // document.location.href="carthome.html"
-    });
+    })
+
 
     box3.append(imgoftrend, timing, itemname, numofitem, amount, atc);
     document.getElementById("inner2").append(box3);
@@ -1041,8 +1139,8 @@
     box4.append(banner);
     document.getElementById("banner").append(box4);
   });
+  let cartArr3=JSON.parse(localStorage.getItem("cart-items"))||[]
 
-  let cartArr3 = JSON.parse(localStorage.getItem("cart-items")) || [];
 
   let newData = [
     {
@@ -1119,13 +1217,15 @@
     atc.style.color = "white";
     atc.style.borderRadius = "10px";
     atc.style.cursor = "pointer";
-    atc.addEventListener("click", function () {
-      console.log("check");
-      cartArr3.push(el);
+    atc.addEventListener("click",function(){
+      console.log("check")
 
-      localStorage.setItem("cart-items", JSON.stringify(cartArr3));
+      cartArr3.push(el)
+
+      localStorage.setItem("cart-items",JSON.stringify(cartArr3))
       // document.location.href="carthome.html"
-    });
+    })
+
 
     box4.append(imgoftrend, timing, itemname, numofitem, amount, atc);
     document.getElementById("inner3").append(box4);
@@ -1146,7 +1246,8 @@
 
     document.querySelector("#discover").append(box5);
   });
-  let cartArr4 = JSON.parse(localStorage.getItem("cart-items")) || [];
+
+  let cartArr4=JSON.parse(localStorage.getItem("cart-items"))||[]
 
   let discoverData = [
     {
@@ -1223,14 +1324,15 @@
     atc.style.color = "white";
     atc.style.borderRadius = "10px";
     atc.style.cursor = "pointer";
-    atc.addEventListener("click", function () {
-      console.log("check");
+    atc.addEventListener("click",function(){
+      console.log("check")
 
-      cartArr4.push(el);
+      cartArr4.push(el)
 
-      localStorage.setItem("cart-items", JSON.stringify(cartArr4));
+      localStorage.setItem("cart-items",JSON.stringify(cartArr4))
       // document.location.href="carthome.html"
-    });
+    })
+
 
     box5.append(imgoftrend, timing, itemname, numofitem, amount, atc);
     document.getElementById("inner4").append(box5);
@@ -1261,36 +1363,46 @@
     document.getElementById("carts3").append(box);
   });
 
-  document.querySelector("#btn").addEventListener("click", signUp);
-  function signUp(event) {
+  document.querySelector("#loginbutton").addEventListener("click", login);
+  function login(event) {
     event.preventDefault();
+    let emailid = document.getElementById("userId").value;
+    let enteredEmail = localStorage.getItem("email");
 
-    let emaild = document.querySelector("#holder").value;
-    localStorage.setItem("email", JSON.stringify(emaild));
+    let paSS = document.getElementById("userpass").value;
+    let enteredPass = localStorage.getItem("password");
 
-    let password = document.querySelector("#pass").value;
-    localStorage.setItem("password", JSON.stringify(password));
-
-    if (emaild == "") {
-      alert("Email Required");
-    } else if (password == "") {
-      alert("Password Required");
+    if (emailid != JSON.parse(enteredEmail)) {
+      alert("Invalid Email Id");
+    } else if (paSS != JSON.parse(enteredPass)) {
+      alert("Invalid Password");
+    } else if (emailid == "") {
+      alert("Something went wrong");
+    } else if (paSS == "") {
+      alert("Something went wrong");
     } else {
-      alert(" Congratulations : Sign-Up Successful");
-      document.querySelector("#holder").value = "";
-      document.querySelector("#pass").value = "";
-      window.location.href = "login.html";
+      alert("Login Successful")
+      window.location.href=("userpage.html")
     }
+
   }
-  document.querySelector("#logo").addEventListener("click", goToHome);
-  function goToHome(event) {
-    event.preventDefault;
-    window.location.href = "index.html";
-  }
-  document.querySelector("#myorders").addEventListener("click", myOrders);
+  document.querySelector("#btn").addEventListener("click", suggestion);
+function suggestion(event){
+  event.preventDefault()
+  let txt=document.getElementById("holder").value
+    localStorage.setItem("Suggestion", JSON.stringify(txt));
+  
+}
+
+document.querySelector("#logo").addEventListener("click",goToHome)
+function goToHome(event){
+  event.preventDefault
+  window.location.href="index.html"
+}
+document.querySelector("#myorders").addEventListener("click", myOrders);
   function myOrders(event) {
     event.preventDefault();
-    alert("Log-in To Avail Offers");
-    window.location.href = "login.html";
+    
+    window.location.href = "carthome.html";
   }
 </script>

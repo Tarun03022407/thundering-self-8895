@@ -1,0 +1,302 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Online Supermarket & Premium Grocery Shopping Store In India
+        --:NatureBasket.co.in</title>
+    <style>
+        * {
+  background-color: #fff;
+  /* justify-content: space-between; */
+
+  margin-left: 0%;
+  margin-right: 0%;
+}
+
+div > img {
+  width: 330px;
+  height: 110px;
+  cursor: pointer;
+}
+#top {
+  display: flex;
+  border: px solid red;
+}
+.headstar {
+  background: url(https://www.naturesbasket.co.in/Images/header-icons.jpg);
+}
+#menu {
+  display: flex;
+  margin: auto;
+  width: 70%;
+  height: 100%;
+  margin-left: 70px;
+}
+#startshop {
+  width: 65%;
+  text-align: center;
+  border: 1px solid rgb(171, 165, 165);
+}
+#pin {
+  background-color: rgb(247, 240, 240);
+  width: 14%;
+  text-align: center;
+  border: 1px solid rgb(171, 165, 165);
+  border-radius: 5px 0px 0px 5px;
+}
+#place {
+  background-color: rgb(247, 240, 240);
+  width: 14%;
+  text-align: center;
+  cursor: pointer;
+  border: 1px solid rgb(171, 165, 165);
+}
+a {
+  text-decoration: none;
+  color: black;
+  float: right;
+  padding-right: 4px;
+  margin-top: 20px;
+}
+#uppernav {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  border: px solid red;
+  width: 55%;
+  margin-bottom: 0%;
+  margin-left: 32%;
+  height: 0px;
+}
+div > a {
+  font-size: 13px;
+  font-weight: normal;
+  margin: auto;
+  margin-right: 50px;
+  text-align: center;
+  padding: 0;
+  position: relative;
+}
+
+#navbar2 {
+  width: 100%;
+  margin: auto;
+  border: 1px solid rgb(239, 223, 223);
+  text-align: center;
+  height: 40px;
+  display: flex;
+  padding-left: 0;
+}
+
+#navbar2 > select {
+  height: 100%;
+  /* border: 1px solid blue; */
+  color: maroon;
+  width: 20%;
+  font-size: 18px;
+  border: none;
+}
+#navbar2 > a {
+  text-align: center;
+  font-size: 14px;
+  margin: auto;
+}
+#contain{
+  display: grid;
+  grid-template-columns: repeat(3,1fr);
+  border: px solid red;
+  text-align: center;
+  margin: auto;
+  padding: 20px;
+  gap: 10px;
+  
+}
+#trend{
+  height: 250px;
+
+  
+}
+button{
+  margin-right:80px ;
+}
+
+    </style>
+</head>
+<body>
+    <a id="login"
+    href="C:\Users\engrt\Desktop\project-unit-2\thundering-self-8895\login.html"
+    >Login</a
+  >
+
+  <div id="uppernav">
+    <div>
+      <a href="">Online Slots Availability</a>
+    </div>
+    <div>
+      <a href="">Fresh & Fast</a>
+    </div>
+    <div>
+      <a href="">Store Locator</a>
+    </div>
+    <div>
+      <a href="">Contact Us</a>
+    </div>
+  </div>
+
+  <div id="container">
+    <div id="top">
+      <div>
+        <img id="logo"
+          src="https://www.naturesbasket.co.in/Images/logosnew.png?v=2"
+          alt=""
+        />
+      </div>
+
+      <div id="menu">
+        <input type="number" id="pin" placeholder=" 🖊️ Enter Pin" />
+
+        <select id="place">
+          <option value="">Mumbai</option>
+          <option value="">Delhi-Ncr</option>
+          <option value="">Pune</option>
+          <option value="">Bangaluru</option>
+          <option value="">Thane</option>
+          <option value="">Kolkata</option>
+          <option value="">Navi Mumbai</option>
+        </select>
+        <input
+          type="text"
+          name=""
+          id="startshop"
+          placeholder="Start Shopping ..."
+        />
+
+        <input
+          type="image"
+          name=""
+          id="search-button"
+          src="	https://www.naturesbasket.co.in/Images/search-button.jpg"
+        />
+      </div>
+    </div>
+
+    <div id="navbar2">
+      <select id="place">
+        <option value="">SHOP BY CATEGORY</option>
+        <option value="">Gift Hampers</option>
+        <option value="">Fruits & Vegetables</option>
+        <option value="">Cheese Meat & Fruit Platter</option>
+        <option value="">Delicatessen & Cheese</option>
+        <option value="">International Cuisine</option>
+        <option value="">Health</option>
+        <option value="">Indian Grocery</option>
+        <option value="">Confectionary & Patesserie</option>
+        <option value="">Meats,Seafood And Eggs</option>
+        <option value="">Snack Bar</option>
+        <option value="">Snacks & Beverages</option>
+        <option value="">Breakfast, Dairy & Bakery</option>
+        <option value="">Instant MealS & Aids</option>
+        <option value="">The Good Food Cafe</option>
+        
+      </select>
+      <a id="myorders" href="">MY ORDERS</a>
+      <a href="">GIFTING</a>
+      <a href="">REWARDS</a>
+      <a href="">BLOGS</a>
+      <a href="">OFFERS</a>
+      <a href="">CONNOISSEUR’S SELECTION</a>
+      <a href="">BOOK STORE VISIT</a>
+    </div>
+  </div>
+
+
+  <div id="contain"> </div>
+</body>
+</html>
+<script>
+    document.querySelector("#login").addEventListener("click",signOut)
+    function signOut(event){
+        event.preventDefault()
+        window.location.href="login.html"
+    }
+    document.querySelector("#logo").addEventListener("click",goToHome)
+function goToHome(event){
+  event.preventDefault
+  window.location.href="carthome.html"
+}
+
+
+let orders= JSON.parse(localStorage.getItem("cart-items"));
+
+orders.map(function (el,i) {
+    let box2 = document.createElement("div");
+    let imgoftrend = document.createElement("img");
+    imgoftrend.setAttribute("src", el.imgurl);
+    imgoftrend.setAttribute("id", "trend");
+
+    let timing = document.createElement("p");
+    timing.innerText = el.time;
+    timing.style.fontSize = "15px";
+    timing.style.marginTop = "0px";
+    timing.style.color = "maroon";
+
+    let itemname = document.createElement("p");
+    itemname.innerText = el.name;
+    itemname.style.fontSize = "20px";
+    let numofitem = document.createElement("p");
+    numofitem.innerText = el.noofitems;
+    numofitem.style.fontSize = "14px";
+    numofitem.style.marginTop = "0px";
+
+    let amount = document.createElement("p");
+    amount.innerText = el.price;
+    amount.style.fontSize = "14px";
+    amount.style.color = "maroon";
+    amount.style.marginTop = "0px";
+
+    let atc = document.createElement("button");
+    atc.innerText = "Buy Now";
+    atc.style.width = "97px";
+    atc.style.height = "31px";
+    // atc.style.marginLeft = "60px";
+    atc.style.backgroundColor = "lightGreen";
+    atc.style.border = "none";
+    atc.style.color = "white";
+    atc.style.borderRadius = "10px";
+    atc.style.cursor = "pointer";
+    atc.addEventListener("click",function(){
+      
+      localStorage.setItem("cart-items",JSON.stringify(cartArr))
+      // document.location.href="carthome.html"
+    })
+    let remove=document.createElement("button")
+    remove.innerText="Remove Item"
+    remove.style.width="100px"
+    remove.style.height="25px"
+    remove.style.marginTop="20px"
+    remove.style.borderRadius = "10px";
+    remove.style.borderColor="gray"
+    remove.style.margin="auto"
+    remove.addEventListener("click",function(){
+      event.target.parentNode.remove();
+      orders.splice(i,1)
+      localStorage.setItem("cart-items",JSON.stringify(orders))
+    })
+    
+
+
+
+
+
+
+    box2.append(imgoftrend, timing, itemname, numofitem, amount, atc,remove);
+
+    document.getElementById("contain").append(box2);
+  });
+  document.querySelector("#logo").addEventListener("click",goToHome)
+function goToHome(event){
+  event.preventDefault
+  window.location.href="index.html"
+}
+</script>
