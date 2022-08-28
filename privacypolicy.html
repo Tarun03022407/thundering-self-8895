@@ -1,0 +1,606 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      * {
+        background-color: #fff;
+        /* justify-content: space-between; */
+
+        margin-left: 0%;
+        margin-right: 0%;
+      }
+
+      div > img {
+        width: 330px;
+        height: 110px;
+        cursor: pointer;
+      }
+      #top {
+        display: flex;
+        border: px solid red;
+      }
+      .headstar {
+        background: url(https://www.naturesbasket.co.in/Images/header-icons.jpg);
+      }
+      #menu {
+        display: flex;
+        margin: auto;
+        width: 70%;
+        height: 100%;
+        margin-left: 70px;
+      }
+      #startshop {
+        width: 65%;
+        text-align: center;
+        border: 1px solid rgb(171, 165, 165);
+      }
+      #pin {
+        background-color: rgb(247, 240, 240);
+        width: 14%;
+        text-align: center;
+        border: 1px solid rgb(171, 165, 165);
+        border-radius: 5px 0px 0px 5px;
+      }
+      #place {
+        background-color: rgb(247, 240, 240);
+        width: 14%;
+        text-align: center;
+        cursor: pointer;
+        border: 1px solid rgb(171, 165, 165);
+      }
+      a {
+        text-decoration: none;
+        color: black;
+        float: right;
+        padding-right: 4px;
+        margin-top: 20px;
+      }
+      #uppernav {
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+        border: px solid red;
+        width: 55%;
+        margin-bottom: 0%;
+        margin-left: 32%;
+        height: 0px;
+      }
+      div > a {
+        font-size: 13px;
+        font-weight: normal;
+        margin: auto;
+        margin-right: 50px;
+        text-align: center;
+        padding: 0;
+        position: relative;
+      }
+
+      #navbar2 {
+        width: 100%;
+        margin: auto;
+        border: 1px solid rgb(239, 223, 223);
+        text-align: center;
+        height: 40px;
+        display: flex;
+        padding-left: 0;
+      }
+
+      #navbar2 > select {
+        height: 100%;
+        /* border: 1px solid blue; */
+        color: maroon;
+        width: 20%;
+        font-size: 18px;
+        border: none;
+      }
+      #navbar2 > a {
+        text-align: center;
+        font-size: 14px;
+        margin: auto;
+      }
+     
+      .faqHeader {
+        color: #b81763;
+        font-size: 20px;
+        line-height: 60px;
+      }
+      #footer {
+        display: block;
+      }
+      #footercontainer {
+        display: flex;
+        text-align: left;
+      }
+      #row {
+        display: flex;
+      }
+
+      #footernav {
+        display: flex;
+        padding-left: 3rem;
+        margin-top: 0px;
+        padding-top: 10px;
+
+        /* text-align: left; */
+      }
+      #col-5-1 {
+        display: flex;
+        /* margin-left: 20px; */
+        padding-top: 1rem;
+        width: 45.8%;
+        /* text-align: left; */
+      }
+      #downloadapp {
+        display: block;
+        margin-top: 20px;
+        margin-left: 10px;
+        text-align: justify;
+      }
+      #sub {
+        display: flex;
+        flex-direction: column;
+        padding-left: 8rem;
+        text-decoration: none;
+        text-align: justify;
+        gap: 20px;
+        padding-top: 6rem;
+        width: 30%;
+        text-align: center;
+        font-size: 30px;
+      }
+      .col-4 {
+        display: block;
+        /* float: left; */
+        padding-left: 4rem;
+        /* padding-right: 5rem; */
+      }
+      input[type="text"],
+      input[type="password"] {
+        outline: none;
+      }
+      a {
+        text-decoration: none;
+      }
+      #footernav li a {
+        color: rgb(133, 133, 133);
+        /* display: block; */
+        font-size: 13px;
+        text-decoration: none;
+        white-space: nowrap;
+        /* text-justify: auto; */
+      }
+      #footernav li {
+        display: block;
+        font-size: 13px;
+        /* text-decoration: none; */
+        text-align: right;
+      }
+
+      #holder {
+        text-align: center;
+        font-size: 70%;
+        height: 50px;
+        border-radius: 20px;
+        border-color: rgb(169, 155, 155);
+      }
+      #btn {
+        height: 40px;
+        width: 50%;
+        border-radius: 10px;
+        background-color: rgb(213, 223, 199);
+        margin: auto;
+        margin-top: 0%;
+        cursor: pointer;
+        border: none;
+      }
+      #pass {
+        text-align: center;
+        font-size: 70%;
+        height: 50px;
+        border-radius: 20px;
+        border-color: rgb(169, 155, 155);
+      }
+    
+    </style>
+  </head>
+  <body>
+    <a
+      href="C:\Users\engrt\Desktop\project-unit-2\thundering-self-8895\login.html"
+      >Login</a
+    >
+
+    <div id="uppernav">
+      <div>
+        <a href="">Online Slots Availability</a>
+      </div>
+      <div>
+        <a href="">Fresh & Fast</a>
+      </div>
+      <div>
+        <a href="">Store Locator</a>
+      </div>
+      <div>
+        <a href="">Contact Us</a>
+      </div>
+    </div>
+
+    <div id="container">
+      <div id="top">
+        <div>
+          <img
+            id="logo"
+            src="https://www.naturesbasket.co.in/Images/logosnew.png?v=2"
+            alt=""
+          />
+        </div>
+
+        <div id="menu">
+          <input type="number" id="pin" placeholder=" 🖊️ Enter Pin" />
+
+          <select id="place">
+            <option value="">Mumbai</option>
+            <option value="">Delhi-Ncr</option>
+            <option value="">Pune</option>
+            <option value="">Bangaluru</option>
+            <option value="">Thane</option>
+            <option value="">Kolkata</option>
+            <option value="">Navi Mumbai</option>
+          </select>
+          <input
+            type="text"
+            name=""
+            id="startshop"
+            placeholder="Start Shopping ..."
+          />
+
+          <input
+            type="image"
+            name=""
+            id="search-button"
+            src="	https://www.naturesbasket.co.in/Images/search-button.jpg"
+          />
+        </div>
+      </div>
+
+      <div id="navbar2">
+        <select id="place">
+          <option value="">SHOP BY CATEGORY</option>
+          <option value="">Gift Hampers</option>
+          <option value="">Fruits & Vegetables</option>
+          <option value="">Cheese Meat & Fruit Platter</option>
+          <option value="">Delicatessen & Cheese</option>
+          <option value="">International Cuisine</option>
+          <option value="">Health</option>
+          <option value="">Indian Grocery</option>
+          <option value="">Confectionary & Patesserie</option>
+          <option value="">Meats,Seafood And Eggs</option>
+          <option value="">Snack Bar</option>
+          <option value="">Snacks & Beverages</option>
+          <option value="">Breakfast, Dairy & Bakery</option>
+          <option value="">Instant MealS & Aids</option>
+          <option value="">The Good Food Cafe</option>
+        </select>
+        <a id="myorders" href="">MY ORDERS</a>
+        <a href="">GIFTING</a>
+        <a href="">REWARDS</a>
+        <a href="" id="blogs">BLOGS</a>
+        <a href="">OFFERS</a>
+        <a href="">CONNOISSEUR’S SELECTION</a>
+        <a href="">BOOK STORE VISIT</a>
+      </div>
+    </div>
+
+    <h2 id="privacyheading">PRIVACY POLICY</h2>
+    <hr />
+    <span class="faqHeader"><strong>1. INTRODUCTION</strong></span>
+    <p>
+      Natures Basket Limited (NBL/we/us/our) acknowledge your faith in us and we
+      endeavor to maintain and secure your privacy at highest standards. NBL
+      recognizes that your privacy is important to you and that you have certain
+      rights in relation to your personal information (“information”). NBL
+      appreciates your trust and uses your information carefully and sensibly.
+      The aim of this privacy policy is to ensure that you understand what
+      information we collect about you, the reasons for collection and use, and
+      entities we share it with. By providing your consent to this privacy
+      policy, you agree to the collection, use and transfer of your information
+      as set out in this privacy policy. NBL may change its privacy policy from
+      time to time and may display the same on its website/mobile application.
+      In case you disapprove any of the terms and conditions of this privacy
+      policy, then you should immediately cease to use the website/mobile
+      application. Our objective is to provide a better shopping experience to
+      our customers and customers of our affiliates.
+    </p>
+    <br />
+    <p>
+      This privacy policy read along with Terms and Conditions of Use manifest
+      NBL policy on the collection, use and disclosure of information shared by
+      the visitors on its website/mobile application. NBL will use the
+      information only as set out in the privacy policy. This privacy policy is
+      published as per the Information Technology Act 2000.
+    </p>
+    <br />
+    <p>
+      Please note that this privacy policy is subject to change from time to
+      time and hence you are requested to visit the site at regular intervals.
+    </p>
+    <br />
+    <span class="faqHeader"
+      ><strong>2. What information we collect and how we use it</strong></span
+    >
+    <p>
+      NBL receives and stores the information you enter on its website/mobile
+      application. Your personal details like email address, name, phone number,
+      are generally collected. You will have the sole right to provide the
+      information and you are not under an obligation to provide any other
+      information, except the details required for delivery of services to you.
+    </p>
+    <br />
+    <p>NBL may use the information for the following purposes:</p>
+    <p>
+      (i) to address any issues relating to service and sale and also to
+      increase your shopping experience;
+    </p>
+    <p>
+      (ii) handling orders and deliver products and to provide promotional
+      offers and share details about products and services;
+    </p>
+    <p>
+      (iii) communicating with you through phone, mobile application or email;
+    </p>
+    <p>(iv) providing an enhanced and delightful customer experience;</p>
+    <p>
+      (v) dealing with enquiries and complaints, customer services and related
+      activities and fixing errors and providing recommendations based on your
+      past purchases;
+    </p>
+    <p>
+      (vi) responding to your queries and fulfilling your requests for
+      information regarding our products and services;
+    </p>
+    <p>
+      (vii) to notify you and send offers about our products and services, and
+      products and services of the holding company, its subsidiaries and all
+      other entities over which the holding company and/or its subsidiaries
+      exercise majority control under the RP-Sanjiv Goenka Group (“Group”);
+    </p>
+    <p>
+      (viii) for marketing and for market research/industry/sector analytics
+      purposes, including internal demographic studies, by third parties, to
+      provide, optimize and personalize their products and services to you and
+      to send you newsletters and information about their products and services;
+      and
+    </p>
+    <p>
+      (ix) responding to judicial process and provide information to law
+      enforcement agencies or as permitted by law.
+    </p>
+    <br />
+    <p>
+      Please note that you can choose not to divulge any information. However,
+      in such case, you will not be able to use the features or services of our
+      website/mobile application. If you post any message, complaint, feedback
+      then we retain the information to redress the disputes and to provide a
+      resolution.
+    </p>
+    <br />
+    <span class="faqHeader"><strong>3. Sharing of information</strong></span
+    ><br />
+    <p>
+      We collect your information relating to your profile in order to improve
+      our service and offerings. During this process, we identify your IP
+      address to collect information. We use this information to customize our
+      services and offerings to your specific needs. We may disclose/transfer
+      your information:
+    </p>
+
+    <p>
+      (i) to any law enforcement authority during course of their requirement or
+      as it may require under any law in force;
+    </p>
+    <p>
+      (ii) to our Group for business purposes including for providing an
+      enhanced and delightful customer experience;
+    </p>
+    <p>(iii) to our affiliate companies for better customer satisfaction;</p>
+    <p>
+      (iv) to our advisors such as lawyers, chartered accountants and financial
+      advisors in connection with business transactions; and
+    </p>
+    <p>
+      (v) to third parties that provide services to us or act on our behalf in
+      connection with the operation of our business.
+    </p>
+    <br />
+    <p>
+      We may also disclose or transfer your information to another third party
+      as a part of corporate reorganization such as merger, acquisition, or
+      transfer.
+    </p>
+    <span class="faqHeader"
+      ><strong>4. Security practices and procedures </strong></span
+    ><br />
+    <p>
+      We use reasonable security measures, particularly those mandated under
+      applicable law, to safeguard and protect your information.
+    </p>
+    <br />
+    <span class="faqHeader"><strong>5. Weblink to other websites</strong></span
+    ><br />
+    <p>
+      Our website/mobile application links to other websites that may collect
+      information about you. NBL is not responsible for the privacy practices or
+      the content of those linked websites.
+    </p>
+    <br />
+    <span class="faqHeader"
+      ><strong
+        >6. Grievance Officer under Information Technology Act 2000</strong
+      ></span
+    ><br />
+    <p>Natures Basket Limited</p>
+    <p>Duncan House</p>
+    <p>31 NS Road</p>
+    <p>Kolkata – 700 001</p>
+    <p>Mobile No. 9831435958</p>
+    <p >Email id legal.nbl@rpsg.in</p>
+    <br />
+    <p>
+      In case of any complaints as a result of access or usage of the
+      website/mobile application, you can reach out to the above person.
+    </p>
+    <hr>
+    <div id="footer">
+        <section id="footerContainer">
+          <div id="row">
+            <div id="downloadapp">
+              <h4 style="padding-left: 14px" ;>Download The App</h4>
+              <p style="margin: 10px">
+                <a
+                  href="https://play.google.com/store/apps/details?id=com.godrej.naturesbasketltd"
+                  ><img
+                    src="	https://cdn.worldvectorlogo.com/logos/get-it-on-google-play.svg"
+                    style="width: 160px; border-width: 0px"
+                    alt=""
+                /></a>
+              </p>
+              <p style="margin: 10px">
+                <a
+                  href="https://apps.apple.com/in/app/natures-basket/id1013402486"
+                  ><img
+                    src="	https://cdn.worldvectorlogo.com/logos/available-on-the-app-store.svg"
+                    style="width: 160px; border-width: 0px"
+                    alt=""
+                /></a>
+              </p>
+            </div>
+            <div id="col-5-1">
+              <nav id="footernav">
+                <ul class="col-4">
+                  <li>
+                    <h4>
+                      <h4>About Us</h4>
+                    </h4>
+                  </li>
+                  <li>
+                    <a href=""> About Us </a>
+                  </li>
+                  <li>
+                    <a href=""> Our Vision And Purpose </a>
+                  </li>
+                  <li>
+                    <a href=""> OQuality Standards </a>
+                  </li>
+                  <li>
+                    <a href=""> Awards </a>
+                  </li>
+                  <li>
+                    <a href=""> FAQ's </a>
+                  </li>
+                  <li>
+                    <a href=""> Available Delivery Slots </a>
+                  </li>
+                  <li>
+                    <a href=""> Vender Connect </a>
+                  </li>
+                </ul>
+                <ul class="col-4">
+                  <li>
+                    <h4>News And Media</h4>
+                  </li>
+                  <li>
+                    <a href="">Press Releases</a>
+                  </li>
+                  <li>
+                    <a href="">Newsletters</a>
+                  </li>
+                  <li>
+                    <a href="">Press Releases</a>
+                  </li>
+                  <li>
+                    <a href="">Events</a>
+                  </li>
+                  <li>
+                    <a href="">Photo Gallery</a>
+                  </li>
+                  <li>
+                    <a href="">Recipes</a>
+                  </li>
+                  <li>
+                    <a href="">NBTV</a>
+                  </li>
+                  <li>
+                    <a href="">Our Virtual Store</a>
+                  </li>
+                </ul>
+                <ul class="col-4">
+                  <li>
+                    <h4>Our Policies</h4>
+                  </li>
+                  <li>
+                    <a href="">Privacy Policy</a>
+                  </li>
+                  <li>
+                    <a href="">Payment Policy</a>
+                  </li>
+                  <li>
+                    <a href="">Disclaimer</a>
+                  </li>
+                  <li>
+                    <a href="">Grievance Officer</a>
+                  </li>
+                </ul>
+              </nav>
+            </div>
+            <div id="sub">
+              <span>SIGN UP</span>
+              <input
+                type="text"
+                name=""
+                id="holder"
+                placeholder="Enter Your Email Address"
+              />
+              <input
+                type="password"
+                id="pass"
+                placeholder="enter your desired password"
+              />
+              <input type="button" name="" id="btn" value="SIGN UP" />
+            </div>
+          </div>
+        </section>
+      </div>
+  </body>
+</html>
+<script>
+     document.querySelector("#btn").addEventListener("click", signUp);
+  function signUp(event) {
+    event.preventDefault();
+
+    let emaild = document.querySelector("#holder").value;
+    localStorage.setItem("email", JSON.stringify(emaild));
+
+    let password = document.querySelector("#pass").value;
+    localStorage.setItem("password", JSON.stringify(password));
+
+    if (emaild == "") {
+      alert("Email Required");
+    } else if (password == "") {
+      alert("Password Required");
+    } else {
+      alert(" Congratulations : Sign-Up Successful");
+      document.querySelector("#holder").value = "";
+      document.querySelector("#pass").value = "";
+      window.location.href = "login.html";
+    }
+  }
+  
+  document.querySelector("#blogs").addEventListener("click",blog);
+  function blog(event){
+    event.preventDefault()
+    console.log("check")
+    window.location.href="blog.html"
+  }
+</script>
