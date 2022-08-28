@@ -207,7 +207,7 @@
 
       #footer{
         height: 300px;
-        border: 1px solid red;
+        border: px solid red;
         width: 100%;
         margin-top: 50px;
         background-color: #23292c
@@ -220,6 +220,7 @@
         /* font-family: cerapro-regular-webfont !important; */
         text-align: center;
         margin-top: 60px;
+        
 
       }
       #footernav{
@@ -266,6 +267,17 @@
         height:40px;
         
       }
+      #lastfoot{
+        height: 100px;
+        width: 100%;
+        border: px solid red;
+        background-color: #191e20
+      }
+      #lastfoot{
+        display:flex;
+        justify-content: space-evenly;
+        align-items: center;
+      }
     
 
       
@@ -274,7 +286,7 @@
 <body>
     <nav>
         <div>
-            <img src="https://blog.naturesbasket.co.in/wp-content/uploads/2019/09/300-x-300px.png" alt="">
+            <img id="logo" src="https://blog.naturesbasket.co.in/wp-content/uploads/2019/09/300-x-300px.png" alt="">
         </div>
         <div>
             <ul>
@@ -444,27 +456,35 @@
           <ul id="footernav">
               <li>
                   <a href="" id="homepage">HOME</a>
+                  &nbsp;&nbsp;|&nbsp;&nbsp;
               </li>
               <li>
-                  <a href="">HEALTHY FOOD</a>
+                  <a href="">HEALTHY FOOD </a>
+                  &nbsp;&nbsp;|&nbsp;&nbsp;
               </li>
               <li>
                   <a href="">FOOD RECIPES</a>
+                  &nbsp;&nbsp;|&nbsp;&nbsp;
               </li>
               <li>
                   <a href="">BAKING</a>
+                  &nbsp;&nbsp;|&nbsp;&nbsp;
               </li>
               <li>
-                  <a href="">CUISINE</a>
+                  <a href="">CUISINE </a>
+                  &nbsp;&nbsp;|&nbsp;&nbsp;
               </li>
               <li>
-                  <a href="">FOOD TRENDS</a>
+                  <a href="">FOOD TRENDS </a>
+                  &nbsp;&nbsp;|&nbsp;&nbsp;
               </li>
               <li>
-                  <a href="">GIFT HAMPERS</a>
+                  <a href="">GIFT HAMPERS    </a>
+                  &nbsp;&nbsp;|&nbsp;&nbsp;
               </li>
               <li>
-                  <a href="">SHOP</a>
+                  <a href="">SHOP  </a>
+                  &nbsp;&nbsp;|&nbsp;&nbsp;
               </li><br>
               <li>
                 <a href="">VIDEOS</a>
@@ -487,8 +507,32 @@
           </li>
         </ul>
       </div>
+    </div>
+    <div id="lastfoot">
+      <div>
+        <p>© 2019 NATURES BASKET LIMITED.  ALL RIGHTS RESERVED.</p>
+      </div>
+      <div >
+        <ul>
+          <li>
+            <a  href="privacypolicy.html">PRIVACY POLICY</a>
+           &nbsp;|&nbsp;
+          </li>
+          <li>
+            <a href="">TERMS OF USE</a>
+           &nbsp;|&nbsp;
+          </li>
+          <li>
+            <a href="">SITEMAPS</a>
+           &nbsp;|&nbsp;
+          </li>
+        </ul>
+
       </div>
     </div>
+
+  </div>
+  
     
 </body>
     
@@ -572,6 +616,12 @@
     console.log("check")
     window.location.href="index.html"
   }
+
+  document.querySelector("#logo").addEventListener("click",goToHome)
+function goToHome(event){
+  event.preventDefault
+  window.location.href="index.html"
+}
 
 
 
